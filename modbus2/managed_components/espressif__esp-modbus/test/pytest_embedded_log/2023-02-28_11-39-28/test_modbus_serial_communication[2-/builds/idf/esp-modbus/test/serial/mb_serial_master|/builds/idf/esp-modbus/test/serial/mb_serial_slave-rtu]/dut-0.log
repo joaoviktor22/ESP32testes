@@ -1,0 +1,327 @@
+Serial port /dev/ttyUSB1
+Connecting....
+Connecting....
+Detecting chip type... Unsupported detection protocol, switching and trying again...
+Connecting.....
+Detecting chip type... ESP32
+Connecting....
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 921600
+Changed.
+Auto-detected Flash size: 8MB
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x00043fff...
+Warning: Image file at 0x1000 is protected with a hash checksum, so not changing the flash size setting. Use the --flash_size=keep option instead of --flash_size=8MB in order to remove this warning, or use the --dont-append-digest option for the elf2image command in order to generate an image file without a hash checksum
+Compressed 25728 bytes to 15870...
+Writing at 0x00001000... (100 %)Wrote 25728 bytes (15870 compressed) at 0x00001000 in 0.6 seconds (effective 360.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 462.9 kbit/s)...
+Hash of data verified.
+Compressed 209584 bytes to 111027...
+Writing at 0x00010000... (14 %)Writing at 0x0001cf81... (28 %)Writing at 0x00022a16... (42 %)Writing at 0x00028546... (57 %)Writing at 0x0002ec24... (71 %)Writing at 0x00038f3c... (85 %)Writing at 0x0003e8c9... (100 %)Wrote 209584 bytes (111027 compressed) at 0x00010000 in 2.0 seconds (effective 834.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Changing baud rate to 115200
+Changed.
+Hard resetting via RTS pin...
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7256
+load:0x40078000,len:14220
+ho 0 tail 12 room 4
+load:0x40080400,len:4168
+entry 0x400806c0
+[0;32mI (29) boot: ESP-IDF v4.2.4-184-gab0ae8733f 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 08:30:36[0m
+[0;32mI (29) boot: chip revision: 3[0m
+[0;32mI (33) boot_comm: chip revision: 3, min. bootloader chip revision: 0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) boot_comm: chip revision: 3, min. application chip revision: 0[0m
+[0;32mI (104) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x0a8e0 ( 43232) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0x0001a908 vaddr=0x3ffb0000 size=0x0220c (  8716) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=0x0001cb1c vaddr=0x40080000 size=0x034fc ( 13564) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=0x00020020 vaddr=0x400d0020 size=0x1a234 (107060) map[0m
+[0;32mI (186) esp_image: segment 4: paddr=0x0003a25c vaddr=0x400834fc size=0x09024 ( 36900) load[0m
+[0;32mI (209) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (209) boot: Disabling RNG early entropy source...[0m
+[0;32mI (210) cpu_start: Pro cpu up.[0m
+[0;32mI (213) cpu_start: Application information:[0m
+[0;32mI (218) cpu_start: Project name:     modbus_master[0m
+[0;32mI (224) cpu_start: App version:      v1.0.8-10-g8e37718[0m
+[0;32mI (230) cpu_start: Compile time:     Feb 28 2023 08:30:26[0m
+[0;32mI (236) cpu_start: ELF file SHA256:  01fea9698a895ed3...[0m
+[0;32mI (242) cpu_start: ESP-IDF:          v4.2.4-184-gab0ae8733f[0m
+[0;32mI (248) cpu_start: Starting app cpu, entry point is 0x4008179c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (258) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (265) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFB30E8 len 0002CF18 (179 KiB): DRAM[0m
+[0;32mI (278) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (284) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (290) heap_init: At 4008C520 len 00013AE0 (78 KiB): IRAM[0m
+[0;32mI (296) cpu_start: Pro cpu start user code[0m
+[0;32mI (315) spi_flash: detected chip: gd[0m
+[0;32mI (315) spi_flash: flash io: dio[0m
+[0;33mW (316) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (325) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (337) uart: queue free spaces: 20[0m
+[0;32mI (397) MASTER_TEST: Modbus master stack initialized...[0m
+[0;32mI (497) MASTER_TEST: Start modbus test...[0m
+[0;31mE (897) MB_CONTROLLER_MASTER: mbc_master_get_parameter(76): Master get parameter failure, error=(0x107) (ESP_ERR_TIMEOUT).[0m
+[0;31mE (897) MASTER_TEST: Characteristic #0 (Data_channel_0) read fail, err = 0x107 (ESP_ERR_TIMEOUT).[0m
+[0;31mE (1307) MB_CONTROLLER_MASTER: mbc_master_get_parameter(76): Master get parameter failure, error=(0x107) (ESP_ERR_TIMEOUT).[0m
+[0;31mE (1307) MASTER_TEST: Characteristic #1 (Humidity_1) read fail, err = 0x107 (ESP_ERR_TIMEOUT).[0m
+[0;31mE (1717) MB_CONTROLLER_MASTER: mbc_master_get_parameter(76): Master get parameter failure, error=(0x107) (ESP_ERR_TIMEOUT).[0m
+[0;31mE (1717) MASTER_TEST: Characteristic #2 (Temperature_1) read fail, err = 0x107 (ESP_ERR_TIMEOUT).[0m
+[0;31mE (2127) MB_CONTROLLER_MASTER: mbc_master_get_parameter(76): Master get parameter failure, error=(0x107) (ESP_ERR_TIMEOUT).[0m
+[0;31mE (2127) MASTER_TEST: Characteristic #3 (Humidity_2) read fail, err = 0x107 (ESP_ERR_TIMEOUT).[0m
+[0;31mE (2537) MB_CONTROLLER_MASTER: mbc_master_get_parameter(76): Master get parameter failure, error=(0x107) (ESP_ERR_TIMEOUT).[0m
+[0;31mE (2537) MASTER_TEST: Characteristic #4 (Temperature_2) read fail, err = 0x107 (ESP_ERR_TIMEOUT).[0m
+[0;31mE (2947) MB_CONTROLLER_MASTER: mbc_master_get_parameter(76): Master get parameter failure, error=(0x107) (ESP_ERR_TIMEOUT).[0m
+[0;31mE (2947) MASTER_TEST: Characteristic #5 (Humidity_3) read fail, err = 0x107 (ESP_ERR_TIMEOUT).[0m
+[0;31mE (3357) MB_CONTROLLER_MASTER: mbc_master_get_parameter(76): Master get parameter failure, error=(0x107) (ESP_ERR_TIMEOUT).[0m
+[0;31mE (3357) MASTER_TEST: Characteristic #6 (Test_regs) read fail, err = 0x107 (ESP_ERR_TIMEOUT).[0m
+[0;31mE (3767) MB_CONTROLLER_MASTER: mbc_master_get_parameter(76): Master get parameter failure, error=(0x107) (ESP_ERR_TIMEOUT).[0m
+[0;31mE (3777) MASTER_TEST: Characteristic #7 (RelayP1) read fail, err = 0x107 (ESP_ERR_TIMEOUT).[0m
+[0;31mE (4177) MB_CONTROLLER_MASTER: mbc_master_get_parameter(76): Master get parameter failure, error=(0x107) (ESP_ERR_TIMEOUT).[0m
+[0;31mE (4187) MASTER_TEST: Characteristic #8 (RelayP2) read fail, err = 0x107 (ESP_ERR_TIMEOUT).[0m
+[0;31mE (5087) MB_CONTROLLER_MASTER: mbc_master_get_parameter(76): Master get parameter failure, error=(0x107) (ESP_ERR_TIMEOUT).[0m
+[0;31mE (5087) MASTER_TEST: Characteristic #0 (Data_channel_0) read fail, err = 0x107 (ESP_ERR_TIMEOUT).[0m
+[0;31mE (5497) MB_CONTROLLER_MASTER: mbc_master_get_parameter(76): Master get parameter failure, error=(0x107) (ESP_ERR_TIMEOUT).[0m
+[0;31mE (5497) MASTER_TEST: Characteristic #1 (Humidity_1) read fail, err = 0x107 (ESP_ERR_TIMEOUT).[0m
+[0;32mI (5507) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (5517) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (5527) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (5537) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (5557) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0x00000000) read successful.[0m
+[0;32mI (5577) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa), write successful.[0m
+[0;32mI (5587) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (5587) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (6097) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (6107) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 1.340000 (0x3fab851f) read successful.[0m
+[0;32mI (6117) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (6127) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (6137) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (6147) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (6167) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (6167) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (6177) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (6677) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (6687) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 1.540000 (0x3fc51eb9) read successful.[0m
+[0;32mI (6697) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (6707) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (6717) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (6727) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (6747) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (6747) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (6757) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (7257) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (7267) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 1.740000 (0x3fdeb853) read successful.[0m
+[0;32mI (7277) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (7287) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (7297) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (7307) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (7327) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (7327) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (7337) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (7837) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (7847) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 1.940000 (0x3ff851ed) read successful.[0m
+[0;32mI (7857) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (7867) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (7877) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (7887) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (7907) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (7907) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (7917) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (8417) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (8427) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 2.140000 (0x4008f5c3) read successful.[0m
+[0;32mI (8437) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (8447) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (8457) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (8467) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (8487) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (8487) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (8497) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (8997) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (9007) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 2.340000 (0x4015c290) read successful.[0m
+[0;32mI (9017) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (9027) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (9037) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (9047) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (9067) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (9067) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (9077) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (9577) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (9587) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 2.540000 (0x40228f5d) read successful.[0m
+[0;32mI (9597) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (9607) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (9617) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (9627) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (9647) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (9647) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (9657) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (10157) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (10167) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 2.740000 (0x402f5c2a) read successful.[0m
+[0;32mI (10177) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (10187) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (10197) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (10207) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (10227) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (10227) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (10237) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (10737) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (10747) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 2.940000 (0x403c28f7) read successful.[0m
+[0;32mI (10757) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (10767) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (10777) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (10787) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (10807) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (10807) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (10817) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (11317) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (11327) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 3.140000 (0x4048f5c4) read successful.[0m
+[0;32mI (11337) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (11347) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (11357) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (11367) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (11387) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (11387) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (11397) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (11897) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (11907) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 3.340000 (0x4055c291) read successful.[0m
+[0;32mI (11917) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (11927) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (11937) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (11947) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (11967) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (11967) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (11977) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (12477) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (12487) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 3.540000 (0x40628f5e) read successful.[0m
+[0;32mI (12497) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (12507) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (12517) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (12527) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (12547) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (12547) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (12557) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (13057) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (13067) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 3.740000 (0x406f5c2b) read successful.[0m
+[0;32mI (13077) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (13087) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (13097) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (13107) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (13127) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (13127) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (13137) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (13637) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (13647) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 3.940001 (0x407c28f8) read successful.[0m
+[0;32mI (13657) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (13667) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (13677) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (13687) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (13707) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (13707) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (13717) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (14217) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (14227) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 4.140000 (0x40847ae2) read successful.[0m
+[0;32mI (14237) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (14247) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (14257) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (14267) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (14287) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (14287) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (14297) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (14797) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (14807) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 4.340000 (0x408ae148) read successful.[0m
+[0;32mI (14817) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (14827) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (14837) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (14847) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (14867) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (14867) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (14877) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (15377) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (15387) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 4.540000 (0x409147ae) read successful.[0m
+[0;32mI (15397) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (15407) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (15417) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (15427) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (15447) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (15447) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (15457) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (15957) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (15967) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 4.740000 (0x4097ae14) read successful.[0m
+[0;32mI (15977) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (15987) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (15997) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (16007) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (16027) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (16027) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (16037) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (16537) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (16547) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 4.940000 (0x409e147a) read successful.[0m
+[0;32mI (16557) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (16567) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (16577) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (16587) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (16607) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (16607) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (16617) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (17117) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (17127) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 5.139999 (0x40a47ae0) read successful.[0m
+[0;32mI (17137) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (17147) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (17157) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (17167) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (17187) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (17187) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (17197) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (17697) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (17707) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 5.339999 (0x40aae146) read successful.[0m
+[0;32mI (17717) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (17727) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (17737) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (17747) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (17767) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (17767) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (17777) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (18277) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (18287) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 5.539999 (0x40b147ac) read successful.[0m
+[0;32mI (18297) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (18307) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (18317) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (18327) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (18347) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (18347) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (18357) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xebaa) read successful.[0m
+[0;32mI (18857) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (18867) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 5.739999 (0x40b7ae12) read successful.[0m
+[0;32mI (18877) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (18887) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (18897) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (18907) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (18927) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (18927) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0xeb55) read successful.[0m
+[0;32mI (18937) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = ON (0xebff) read successful.[0m
+[0;32mI (19437) MASTER_TEST: Alarm triggered by cid #8.[0m
+[0;32mI (19437) MASTER_TEST: Destroy master...[0m

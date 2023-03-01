@@ -1,0 +1,165 @@
+Serial port /dev/ttyUSB1
+Connecting....
+Connecting......
+Detecting chip type... Unsupported detection protocol, switching and trying again...
+Connecting....
+Detecting chip type... ESP32
+Connecting.....
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 921600
+Changed.
+Auto-detected Flash size: 4MB
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x00068fff...
+Warning: Image file at 0x1000 is protected with a hash checksum, so not changing the flash size setting. Use the --flash_size=keep option instead of --flash_size=4MB in order to remove this warning, or use the --dont-append-digest option for the elf2image command in order to generate an image file without a hash checksum
+Compressed 25728 bytes to 15872...
+Writing at 0x00001000... (100 %)Wrote 25728 bytes (15872 compressed) at 0x00001000 in 0.7 seconds (effective 285.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 308.1 kbit/s)...
+Hash of data verified.
+Compressed 360560 bytes to 204883...
+Writing at 0x00010000... (7 %)Writing at 0x0001cfea... (15 %)Writing at 0x00026389... (23 %)Writing at 0x0002ba17... (30 %)Writing at 0x000339a2... (38 %)Writing at 0x00038e94... (46 %)Writing at 0x0003ea3d... (53 %)Writing at 0x00043fa3... (61 %)Writing at 0x00049583... (69 %)Writing at 0x0004ec9f... (76 %)Writing at 0x00054512... (84 %)Writing at 0x0005a027... (92 %)Writing at 0x00063627... (100 %)Wrote 360560 bytes (204883 compressed) at 0x00010000 in 3.7 seconds (effective 773.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Changing baud rate to 115200
+Changed.
+Hard resetting via RTS pin...
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7256
+load:0x40078000,len:14220
+ho 0 tail 12 room 4
+load:0x40080400,len:4168
+entry 0x400806c0
+[0;32mI (29) boot: ESP-IDF v4.2.4-184-gab0ae8733f 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 08:35:43[0m
+[0;32mI (29) boot: chip revision: 3[0m
+[0;32mI (33) boot_comm: chip revision: 3, min. bootloader chip revision: 0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) boot_comm: chip revision: 3, min. application chip revision: 0[0m
+[0;32mI (104) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x1098c ( 67980) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=0x000209b4 vaddr=0x3ffb0000 size=0x022d4 (  8916) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=0x00022c90 vaddr=0x40080000 size=0x0b748 ( 46920) load[0m
+[0;32mI (166) esp_image: segment 3: paddr=0x0002e3e0 vaddr=0x00000000 size=0x01c38 (  7224) [0m
+[0;32mI (169) esp_image: segment 4: paddr=0x00030020 vaddr=0x400d0020 size=0x38020 (229408) map[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (267) cpu_start: Pro cpu up.[0m
+[0;32mI (271) cpu_start: Application information:[0m
+[0;32mI (275) cpu_start: Project name:     modbus_tcp_slave[0m
+[0;32mI (281) cpu_start: App version:      v1.0.8-10-g8e37718[0m
+[0;32mI (287) cpu_start: Compile time:     Feb 28 2023 08:35:35[0m
+[0;32mI (293) cpu_start: ELF file SHA256:  bb9937d0ccdbceeb...[0m
+[0;32mI (299) cpu_start: ESP-IDF:          v4.2.4-184-gab0ae8733f[0m
+[0;32mI (305) cpu_start: Starting app cpu, entry point is 0x40081830[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (316) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (323) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (329) heap_init: At 3FFB4028 len 0002BFD8 (175 KiB): DRAM[0m
+[0;32mI (335) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (341) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (348) heap_init: At 4008B748 len 000148B8 (82 KiB): IRAM[0m
+[0;32mI (354) cpu_start: Pro cpu start user code[0m
+[0;32mI (372) spi_flash: detected chip: generic[0m
+[0;32mI (373) spi_flash: flash io: dio[0m
+[0;33mW (373) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (383) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (480) system_api: Base MAC address is not set[0m
+[0;32mI (480) system_api: read default base MAC address from EFUSE[0m
+[0;32mI (500) esp_eth.netif.glue: 10:97:bd:d5:51:f3[0m
+[0;32mI (500) esp_eth.netif.glue: ethernet attached to netif[0m
+[0;32mI (3200) example_connect: Waiting for IP(s)[0m
+[0;32mI (12470) esp_netif_handlers: example_connect: eth ip: 192.168.34.181, mask: 255.255.254.0, gw: 192.168.34.252[0m
+[0;32mI (12470) example_connect: Got IPv4 event: Interface "example_connect: eth" address: 192.168.34.181[0m
+[0;32mI (12480) example_connect: Connected to example_connect: eth[0m
+[0;32mI (12480) example_connect: - IPv4 address: 192.168.34.181[0m
+[0;32mI (12490) MB_TCP_SLAVE_PORT: Socket (#54), listener  on port: 502, errno=0[0m
+[0;32mI (12500) MB_TCP_SLAVE_PORT: Protocol stack initialized.[0m
+[0;32mI (12550) SLAVE_TEST: Modbus slave stack initialized.[0m
+[0;32mI (12550) SLAVE_TEST: Start modbus test...[0m
+[0;32mI (42800) MB_TCP_SLAVE_PORT: Socket (#55), accept client connection from address: 192.168.34.182[0m
+[0;32mI (42820) MB_TCP_SLAVE_PORT: Socket (#56), accept client connection from address: 192.168.34.182[0m
+[0;32mI (42840) MB_TCP_SLAVE_PORT: Socket (#57), accept client connection from address: 192.168.34.182[0m
+[0;32mI (42930) SLAVE_TEST: INPUT READ (42522793 us), ADDR:0, TYPE:8, INST_ADDR:0x3ffb2a08, SIZE:2[0m
+[0;32mI (43120) SLAVE_TEST: HOLDING READ (42707536 us), ADDR:0, TYPE:2, INST_ADDR:0x3ffb2c80, SIZE:2[0m
+[0;32mI (43300) SLAVE_TEST: INPUT READ (42891460 us), ADDR:2, TYPE:8, INST_ADDR:0x3ffb2a0c, SIZE:2[0m
+[0;32mI (43490) SLAVE_TEST: HOLDING READ (43077160 us), ADDR:2, TYPE:2, INST_ADDR:0x3ffb2c84, SIZE:2[0m
+[0;32mI (43670) SLAVE_TEST: INPUT READ (43261000 us), ADDR:4, TYPE:8, INST_ADDR:0x3ffb2a10, SIZE:2[0m
+[0;32mI (43850) SLAVE_TEST: HOLDING READ (43445017 us), ADDR:4, TYPE:2, INST_ADDR:0x3ffb2c88, SIZE:2[0m
+[0;32mI (44040) SLAVE_TEST: HOLDING READ (43628822 us), ADDR:8, TYPE:2, INST_ADDR:0x3ffb2c90, SIZE:100[0m
+[0;32mI (44400) SLAVE_TEST: HOLDING WRITE (43991434 us), ADDR:8, TYPE:1, INST_ADDR:0x3ffb2c90, SIZE:100[0m
+[0;32mI (44680) SLAVE_TEST: COILS READ (44274540 us), ADDR:0, TYPE:32, INST_ADDR:0x3ffb2a04, SIZE:8[0m
+[0;32mI (44870) SLAVE_TEST: COILS READ (44457791 us), ADDR:8, TYPE:32, INST_ADDR:0x3ffb2a05, SIZE:8[0m
+[0;32mI (45530) SLAVE_TEST: INPUT READ (45121155 us), ADDR:0, TYPE:8, INST_ADDR:0x3ffb2a08, SIZE:2[0m
+[0;32mI (45730) SLAVE_TEST: HOLDING READ (45317004 us), ADDR:0, TYPE:2, INST_ADDR:0x3ffb2c80, SIZE:2[0m
+[0;32mI (45910) SLAVE_TEST: INPUT READ (45501437 us), ADDR:2, TYPE:8, INST_ADDR:0x3ffb2a0c, SIZE:2[0m
+[0;32mI (46100) SLAVE_TEST: HOLDING READ (45686541 us), ADDR:2, TYPE:2, INST_ADDR:0x3ffb2c84, SIZE:2[0m
+[0;32mI (46280) SLAVE_TEST: INPUT READ (45871026 us), ADDR:4, TYPE:8, INST_ADDR:0x3ffb2a10, SIZE:2[0m
+[0;32mI (46460) SLAVE_TEST: HOLDING READ (46055084 us), ADDR:4, TYPE:2, INST_ADDR:0x3ffb2c88, SIZE:2[0m
+[0;32mI (46650) SLAVE_TEST: HOLDING READ (46239824 us), ADDR:8, TYPE:2, INST_ADDR:0x3ffb2c90, SIZE:100[0m
+[0;32mI (46920) SLAVE_TEST: COILS READ (46513533 us), ADDR:0, TYPE:32, INST_ADDR:0x3ffb2a04, SIZE:8[0m
+[0;32mI (47110) SLAVE_TEST: COILS READ (46696991 us), ADDR:8, TYPE:32, INST_ADDR:0x3ffb2a05, SIZE:8[0m
+[0;32mI (47770) SLAVE_TEST: INPUT READ (47361270 us), ADDR:0, TYPE:8, INST_ADDR:0x3ffb2a08, SIZE:2[0m
+[0;32mI (47960) SLAVE_TEST: HOLDING READ (47554904 us), ADDR:0, TYPE:2, INST_ADDR:0x3ffb2c80, SIZE:2[0m
+[0;32mI (48150) SLAVE_TEST: INPUT READ (47739303 us), ADDR:2, TYPE:8, INST_ADDR:0x3ffb2a0c, SIZE:2[0m
+[0;32mI (48330) SLAVE_TEST: HOLDING READ (47924311 us), ADDR:2, TYPE:2, INST_ADDR:0x3ffb2c84, SIZE:2[0m
+[0;32mI (48520) SLAVE_TEST: INPUT READ (48109019 us), ADDR:4, TYPE:8, INST_ADDR:0x3ffb2a10, SIZE:2[0m
+[0;32mI (48700) SLAVE_TEST: HOLDING READ (48292774 us), ADDR:4, TYPE:2, INST_ADDR:0x3ffb2c88, SIZE:2[0m
+[0;32mI (48890) SLAVE_TEST: HOLDING READ (48477062 us), ADDR:8, TYPE:2, INST_ADDR:0x3ffb2c90, SIZE:100[0m
+[0;32mI (49160) SLAVE_TEST: COILS READ (48751038 us), ADDR:0, TYPE:32, INST_ADDR:0x3ffb2a04, SIZE:8[0m
+[0;32mI (49340) SLAVE_TEST: COILS READ (48934235 us), ADDR:8, TYPE:32, INST_ADDR:0x3ffb2a05, SIZE:8[0m
+[0;32mI (50010) SLAVE_TEST: INPUT READ (49601102 us), ADDR:0, TYPE:8, INST_ADDR:0x3ffb2a08, SIZE:2[0m
+[0;32mI (50190) SLAVE_TEST: HOLDING READ (49784846 us), ADDR:0, TYPE:2, INST_ADDR:0x3ffb2c80, SIZE:2[0m
+[0;32mI (50390) SLAVE_TEST: INPUT READ (49978554 us), ADDR:2, TYPE:8, INST_ADDR:0x3ffb2a0c, SIZE:2[0m
+[0;32mI (50570) SLAVE_TEST: HOLDING READ (50162700 us), ADDR:2, TYPE:2, INST_ADDR:0x3ffb2c84, SIZE:2[0m
+[0;32mI (50760) SLAVE_TEST: INPUT READ (50347371 us), ADDR:4, TYPE:8, INST_ADDR:0x3ffb2a10, SIZE:2[0m
+[0;32mI (50940) SLAVE_TEST: HOLDING READ (50530922 us), ADDR:4, TYPE:2, INST_ADDR:0x3ffb2c88, SIZE:2[0m
+[0;32mI (51120) SLAVE_TEST: HOLDING READ (50715259 us), ADDR:8, TYPE:2, INST_ADDR:0x3ffb2c90, SIZE:100[0m
+[0;32mI (51400) SLAVE_TEST: COILS READ (50988449 us), ADDR:0, TYPE:32, INST_ADDR:0x3ffb2a04, SIZE:8[0m
+[0;32mI (51580) SLAVE_TEST: COILS READ (51172891 us), ADDR:8, TYPE:32, INST_ADDR:0x3ffb2a05, SIZE:8[0m
+[0;32mI (52250) SLAVE_TEST: INPUT READ (51841094 us), ADDR:0, TYPE:8, INST_ADDR:0x3ffb2a08, SIZE:2[0m
+[0;32mI (52440) SLAVE_TEST: HOLDING READ (52034681 us), ADDR:0, TYPE:2, INST_ADDR:0x3ffb2c80, SIZE:2[0m
+[0;32mI (52630) SLAVE_TEST: INPUT READ (52219898 us), ADDR:2, TYPE:8, INST_ADDR:0x3ffb2a0c, SIZE:2[0m
+[0;32mI (52810) SLAVE_TEST: HOLDING READ (52403980 us), ADDR:2, TYPE:2, INST_ADDR:0x3ffb2c84, SIZE:2[0m
+[0;32mI (53000) SLAVE_TEST: INPUT READ (52588518 us), ADDR:4, TYPE:8, INST_ADDR:0x3ffb2a10, SIZE:2[0m
+[0;32mI (53180) SLAVE_TEST: HOLDING READ (52772855 us), ADDR:4, TYPE:2, INST_ADDR:0x3ffb2c88, SIZE:2[0m
+[0;32mI (53370) SLAVE_TEST: HOLDING READ (52957762 us), ADDR:8, TYPE:2, INST_ADDR:0x3ffb2c90, SIZE:100[0m
+[0;32mI (53640) SLAVE_TEST: COILS READ (53232298 us), ADDR:0, TYPE:32, INST_ADDR:0x3ffb2a04, SIZE:8[0m
+[0;32mI (53820) SLAVE_TEST: COILS READ (53414834 us), ADDR:8, TYPE:32, INST_ADDR:0x3ffb2a05, SIZE:8[0m
+[0;32mI (54490) SLAVE_TEST: INPUT READ (54081010 us), ADDR:0, TYPE:8, INST_ADDR:0x3ffb2a08, SIZE:2[0m
+[0;32mI (54670) SLAVE_TEST: HOLDING READ (54265119 us), ADDR:0, TYPE:2, INST_ADDR:0x3ffb2c80, SIZE:2[0m
+[0;32mI (54870) SLAVE_TEST: INPUT READ (54458812 us), ADDR:2, TYPE:8, INST_ADDR:0x3ffb2a0c, SIZE:2[0m
+[0;32mI (55050) SLAVE_TEST: HOLDING READ (54641893 us), ADDR:2, TYPE:2, INST_ADDR:0x3ffb2c84, SIZE:2[0m
+[0;32mI (55240) SLAVE_TEST: INPUT READ (54826650 us), ADDR:4, TYPE:8, INST_ADDR:0x3ffb2a10, SIZE:2[0m
+[0;32mI (55420) SLAVE_TEST: HOLDING READ (55010131 us), ADDR:4, TYPE:2, INST_ADDR:0x3ffb2c88, SIZE:2[0m
+[0;32mI (55600) SLAVE_TEST: HOLDING READ (55193943 us), ADDR:8, TYPE:2, INST_ADDR:0x3ffb2c90, SIZE:100[0m
+[0;32mI (55880) SLAVE_TEST: COILS READ (55466072 us), ADDR:0, TYPE:32, INST_ADDR:0x3ffb2a04, SIZE:8[0m
+[0;32mI (56060) SLAVE_TEST: COILS READ (55650792 us), ADDR:8, TYPE:32, INST_ADDR:0x3ffb2a05, SIZE:8[0m
+[0;32mI (56730) SLAVE_TEST: INPUT READ (56321057 us), ADDR:0, TYPE:8, INST_ADDR:0x3ffb2a08, SIZE:2[0m
+[0;32mI (56920) SLAVE_TEST: HOLDING READ (56514556 us), ADDR:0, TYPE:2, INST_ADDR:0x3ffb2c80, SIZE:2[0m
+[0;32mI (57110) SLAVE_TEST: INPUT READ (56699670 us), ADDR:2, TYPE:8, INST_ADDR:0x3ffb2a0c, SIZE:2[0m
+[0;32mI (57290) SLAVE_TEST: HOLDING READ (56885015 us), ADDR:2, TYPE:2, INST_ADDR:0x3ffb2c84, SIZE:2[0m
+[0;32mI (57480) SLAVE_TEST: INPUT READ (57069870 us), ADDR:4, TYPE:8, INST_ADDR:0x3ffb2a10, SIZE:2[0m
+[0;32mI (57660) SLAVE_TEST: HOLDING READ (57253812 us), ADDR:4, TYPE:2, INST_ADDR:0x3ffb2c88, SIZE:2[0m
+[0;32mI (57850) SLAVE_TEST: HOLDING READ (57438516 us), ADDR:8, TYPE:2, INST_ADDR:0x3ffb2c90, SIZE:100[0m
+[0;32mI (58120) SLAVE_TEST: COILS READ (57712443 us), ADDR:0, TYPE:32, INST_ADDR:0x3ffb2a04, SIZE:8[0m
+[0;32mI (58120) SLAVE_TEST: Modbus controller destroyed.[0m

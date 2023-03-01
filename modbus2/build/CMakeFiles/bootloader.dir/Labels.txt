@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/joaoviktor/ESP-TESTES/modbus2/build/CMakeFiles/bootloader
+/Users/joaoviktor/ESP-TESTES/modbus2/build/CMakeFiles/bootloader.rule
+/Users/joaoviktor/ESP-TESTES/modbus2/build/CMakeFiles/bootloader-complete.rule
+/Users/joaoviktor/ESP-TESTES/modbus2/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/joaoviktor/ESP-TESTES/modbus2/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/joaoviktor/ESP-TESTES/modbus2/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/joaoviktor/ESP-TESTES/modbus2/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/joaoviktor/ESP-TESTES/modbus2/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/joaoviktor/ESP-TESTES/modbus2/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/joaoviktor/ESP-TESTES/modbus2/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

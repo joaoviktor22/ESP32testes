@@ -1,0 +1,2076 @@
+Serial port /dev/ttyUSB3
+Connecting....
+Connecting....
+Detecting chip type... Unsupported detection protocol, switching and trying again...
+Connecting.....
+Detecting chip type... ESP32
+Connecting....
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 921600
+Changed.
+Auto-detected Flash size: 4MB
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x00076fff...
+Warning: Image file at 0x1000 is protected with a hash checksum, so not changing the flash size setting. Use the --flash_size=keep option instead of --flash_size=4MB in order to remove this warning, or use the --dont-append-digest option for the elf2image command in order to generate an image file without a hash checksum
+Compressed 25728 bytes to 15870...
+Writing at 0x00001000... (100 %)Wrote 25728 bytes (15870 compressed) at 0x00001000 in 0.7 seconds (effective 306.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 308.3 kbit/s)...
+Hash of data verified.
+Compressed 417888 bytes to 246393...
+Writing at 0x00010000... (6 %)Writing at 0x0001d8df... (12 %)Writing at 0x000287de... (18 %)Writing at 0x0002de59... (25 %)Writing at 0x00033e24... (31 %)Writing at 0x000394d1... (37 %)Writing at 0x0003ef96... (43 %)Writing at 0x00044794... (50 %)Writing at 0x00049f7e... (56 %)Writing at 0x0004f736... (62 %)Writing at 0x00054d86... (68 %)Writing at 0x0005a83e... (75 %)Writing at 0x000610c3... (81 %)Writing at 0x0006938d... (87 %)Writing at 0x0006fd0c... (93 %)Writing at 0x00075c9b... (100 %)Wrote 417888 bytes (246393 compressed) at 0x00010000 in 4.0 seconds (effective 832.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Changing baud rate to 115200
+Changed.
+Hard resetting via RTS pin...
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7256
+load:0x40078000,len:14220
+ho 0 tail 12 room 4
+load:0x40080400,len:4168
+entry 0x400806c0
+[0;32mI (29) boot: ESP-IDF v4.2.4-184-gab0ae8733f 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 08:33:43[0m
+[0;32mI (29) boot: chip revision: 3[0m
+[0;32mI (33) boot_comm: chip revision: 3, min. bootloader chip revision: 0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) boot_comm: chip revision: 3, min. application chip revision: 0[0m
+[0;32mI (104) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x14290 ( 82576) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0x000242b8 vaddr=0x3ffb0000 size=0x022c8 (  8904) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0x00026588 vaddr=0x40080000 size=0x09a90 ( 39568) load[0m
+[0;32mI (169) esp_image: segment 3: paddr=0x00030020 vaddr=0x400d0020 size=0x42a28 (272936) map[0m
+[0;32mI (273) esp_image: segment 4: paddr=0x00072a50 vaddr=0x40089a90 size=0x035ec ( 13804) load[0m
+[0;32mI (286) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (286) boot: Disabling RNG early entropy source...[0m
+[0;32mI (287) cpu_start: Pro cpu up.[0m
+[0;32mI (291) cpu_start: Application information:[0m
+[0;32mI (295) cpu_start: Project name:     modbus_tcp_master[0m
+[0;32mI (301) cpu_start: App version:      v1.0.8-10-g8e37718[0m
+[0;32mI (307) cpu_start: Compile time:     Feb 28 2023 08:33:37[0m
+[0;32mI (313) cpu_start: ELF file SHA256:  03b0b88536fcea95...[0m
+[0;32mI (319) cpu_start: ESP-IDF:          v4.2.4-184-gab0ae8733f[0m
+[0;32mI (325) cpu_start: Starting app cpu, entry point is 0x40081900[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+D (336) memory_layout: Checking 7 reserved memory ranges:[0m
+D (341) memory_layout: Reserved memory range 0x3ffae000 - 0x3ffae6e0[0m
+D (347) memory_layout: Reserved memory range 0x3ffb0000 - 0x3ffb4150[0m
+D (354) memory_layout: Reserved memory range 0x3ffe0000 - 0x3ffe0440[0m
+D (360) memory_layout: Reserved memory range 0x3ffe3f20 - 0x3ffe4350[0m
+D (367) memory_layout: Reserved memory range 0x40070000 - 0x40078000[0m
+D (373) memory_layout: Reserved memory range 0x40078000 - 0x40080000[0m
+D (379) memory_layout: Reserved memory range 0x40080000 - 0x4008d07c[0m
+D (386) memory_layout: Building list of available memory regions:[0m
+D (392) memory_layout: Available memory region 0x3ffae6e0 - 0x3ffb0000[0m
+D (399) memory_layout: Available memory region 0x3ffb4150 - 0x3ffb8000[0m
+D (405) memory_layout: Available memory region 0x3ffb8000 - 0x3ffc0000[0m
+D (412) memory_layout: Available memory region 0x3ffc0000 - 0x3ffc2000[0m
+D (418) memory_layout: Available memory region 0x3ffc2000 - 0x3ffc4000[0m
+D (425) memory_layout: Available memory region 0x3ffc4000 - 0x3ffc6000[0m
+D (432) memory_layout: Available memory region 0x3ffc6000 - 0x3ffc8000[0m
+D (438) memory_layout: Available memory region 0x3ffc8000 - 0x3ffca000[0m
+D (445) memory_layout: Available memory region 0x3ffca000 - 0x3ffcc000[0m
+D (451) memory_layout: Available memory region 0x3ffcc000 - 0x3ffce000[0m
+D (458) memory_layout: Available memory region 0x3ffce000 - 0x3ffd0000[0m
+D (465) memory_layout: Available memory region 0x3ffd0000 - 0x3ffd2000[0m
+D (471) memory_layout: Available memory region 0x3ffd2000 - 0x3ffd4000[0m
+D (478) memory_layout: Available memory region 0x3ffd4000 - 0x3ffd6000[0m
+D (484) memory_layout: Available memory region 0x3ffd6000 - 0x3ffd8000[0m
+D (491) memory_layout: Available memory region 0x3ffd8000 - 0x3ffda000[0m
+D (498) memory_layout: Available memory region 0x3ffda000 - 0x3ffdc000[0m
+D (504) memory_layout: Available memory region 0x3ffdc000 - 0x3ffde000[0m
+D (511) memory_layout: Available memory region 0x3ffde000 - 0x3ffe0000[0m
+D (517) memory_layout: Available memory region 0x3ffe0440 - 0x3ffe3f20[0m
+D (524) memory_layout: Available memory region 0x3ffe4350 - 0x3ffe8000[0m
+D (531) memory_layout: Available memory region 0x3ffe8000 - 0x3fff0000[0m
+D (537) memory_layout: Available memory region 0x3fff0000 - 0x3fff8000[0m
+D (544) memory_layout: Available memory region 0x3fff8000 - 0x3fffc000[0m
+D (550) memory_layout: Available memory region 0x3fffc000 - 0x40000000[0m
+D (557) memory_layout: Available memory region 0x4008d07c - 0x4008e000[0m
+D (564) memory_layout: Available memory region 0x4008e000 - 0x40090000[0m
+D (570) memory_layout: Available memory region 0x40090000 - 0x40092000[0m
+D (577) memory_layout: Available memory region 0x40092000 - 0x40094000[0m
+D (583) memory_layout: Available memory region 0x40094000 - 0x40096000[0m
+D (590) memory_layout: Available memory region 0x40096000 - 0x40098000[0m
+D (597) memory_layout: Available memory region 0x40098000 - 0x4009a000[0m
+D (603) memory_layout: Available memory region 0x4009a000 - 0x4009c000[0m
+D (610) memory_layout: Available memory region 0x4009c000 - 0x4009e000[0m
+D (616) memory_layout: Available memory region 0x4009e000 - 0x400a0000[0m
+[0;32mI (623) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (630) heap_init: New heap initialised at 0x3ffae6e0[0m
+[0;32mI (635) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+D (641) heap_init: New heap initialised at 0x3ffb4150[0m
+[0;32mI (647) heap_init: At 3FFB4150 len 0002BEB0 (175 KiB): DRAM[0m
+[0;32mI (653) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (659) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+D (666) heap_init: New heap initialised at 0x4008d07c[0m
+[0;32mI (671) heap_init: At 4008D07C len 00012F84 (75 KiB): IRAM[0m
+[0;32mI (677) cpu_start: Pro cpu start user code[0m
+D (689) clk: RTC_SLOW_CLK calibration value: 3015526[0m
+D (699) intr_alloc: Connected src 46 to int 2 (cpu 0)[0m
+D (699) intr_alloc: Connected src 17 to int 3 (cpu 0)[0m
+D (700) intr_alloc: Connected src 24 to int 9 (cpu 0)[0m
+D (704) FLASH_HAL: extra_dummy: 1[0m
+D (708) spi_flash: trying chip: issi[0m
+D (711) spi_flash: trying chip: gd[0m
+D (715) spi_flash: trying chip: mxic[0m
+D (718) spi_flash: trying chip: generic[0m
+[0;32mI (722) spi_flash: detected chip: generic[0m
+[0;32mI (727) spi_flash: flash io: dio[0m
+[0;33mW (731) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (744) cpu_start: Starting scheduler on PRO CPU.[0m
+D (0) intr_alloc: Connected src 25 to int 2 (cpu 1)[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+D (759) heap_init: New heap initialised at 0x3ffe0440[0m
+D (769) heap_init: New heap initialised at 0x3ffe4350[0m
+D (779) intr_alloc: Connected src 16 to int 12 (cpu 0)[0m
+D (779) partition: Loading the partition table[0m
+D (789) partition: Partition table MD5 verified[0m
+D (819) esp_netif_lwip: LwIP stack has been initialized[0m
+D (819) esp_netif_lwip: esp-netif has been successfully initialized[0m
+D (829) event: running task for loop 0x3ffb95d0[0m
+D (829) event: created task for loop 0x3ffb95d0[0m
+D (829) event: created event loop 0x3ffb95d0[0m
+D (839) esp_netif_objects: esp_netif_add_to_list 0x3ffba564[0m
+D (839) esp_netif_objects: esp_netif_add_to_list netif added successfully (total netifs: 1)[0m
+D (849) intr_alloc: Connected src 38 to int 13 (cpu 0)[0m
+[0;32mI (869) system_api: Base MAC address is not set[0m
+[0;32mI (869) system_api: read default base MAC address from EFUSE[0m
+D (869) efuse: coding scheme 0[0m
+D (869) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit[0m
+D (879) efuse: coding scheme 0[0m
+D (879) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit[0m
+D (889) efuse: coding scheme 0[0m
+D (889) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit[0m
+D (899) efuse: coding scheme 0[0m
+D (899) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit[0m
+D (909) efuse: coding scheme 0[0m
+D (909) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (919) efuse: coding scheme 0[0m
+D (919) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (929) efuse: coding scheme 0[0m
+D (929) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit[0m
+[0;32mI (959) esp_eth.netif.glue: 10:97:bd:d5:4f:b3[0m
+[0;32mI (959) esp_eth.netif.glue: ethernet attached to netif[0m
+D (3359) event: running post ETH_EVENT:0 with handler 0x400de750 and context 0x3ffba534 on loop 0x3ffb95d0[0m
+D (3359) esp_netif_handlers: esp_netif action has started with netif0x3ffba564 from event_id=0[0m
+D (3359) esp_netif_lwip: check: remote, if=0x3ffba564 fn=0x400df258
+[0m
+D (3369) esp_netif_lwip: esp_netif_start_api 0x3ffba564[0m
+D (3369) emac_esp32: working in 100Mbps[0m
+D (3369) esp_netif_lwip: esp_netif_get_hostname esp_netif:0x3ffba564[0m
+D (3389) esp_netif_lwip: check: local, if=0x3ffba564 fn=0x400dfb60
+[0m
+D (3389) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3ffba564[0m
+D (3399) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (3399) emac_esp32: working in full duplex[0m
+D (3409) event: running post ETH_EVENT:2 with handler 0x400de798 and context 0x3ffba7c4 on loop 0x3ffb95d0[0m
+D (3419) esp_netif_handlers: esp_netif action connected with netif0x3ffba564 from event_id=2[0m
+D (3429) esp_netif_lwip: check: remote, if=0x3ffba564 fn=0x400df43c
+[0m
+D (3429) esp_netif_lwip: esp_netif_up_api esp_netif:0x3ffba564[0m
+[0;32mI (3429) example_connect: Waiting for IP(s)[0m
+D (3439) esp_netif_lwip: check: local, if=0x3ffba564 fn=0x400dfb60
+[0m
+D (3449) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3ffba564[0m
+D (3459) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (3459) esp_netif_lwip: check: remote, if=0x3ffba564 fn=0x400df0ac
+[0m
+D (3469) esp_netif_lwip: esp_netif_dhcpc_start_api esp_netif:0x3ffba564[0m
+D (3479) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3ffba564[0m
+D (3479) esp_netif_lwip: if0x3ffba564 start ip lost tmr: no need start because netif=0x3ffba5e8 interval=120 ip=0[0m
+D (3489) esp_netif_lwip: starting dhcp client[0m
+D (3499) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (4059) emac_esp32: receive len= 72[0m
+D (4649) emac_esp32: receive len= 60[0m
+D (5139) emac_esp32: receive len= 72[0m
+D (6219) emac_esp32: receive len= 72[0m
+D (6659) emac_esp32: receive len= 60[0m
+D (8379) emac_esp32: receive len= 187[0m
+D (8649) emac_esp32: receive len= 60[0m
+D (10649) emac_esp32: receive len= 60[0m
+D (12679) emac_esp32: receive len= 60[0m
+D (14659) emac_esp32: receive len= 60[0m
+D (16659) emac_esp32: receive len= 60[0m
+D (18659) emac_esp32: receive len= 60[0m
+D (20659) emac_esp32: receive len= 60[0m
+D (22659) emac_esp32: receive len= 60[0m
+D (24659) emac_esp32: receive len= 60[0m
+D (26679) emac_esp32: receive len= 60[0m
+D (28669) emac_esp32: receive len= 60[0m
+D (30669) emac_esp32: receive len= 60[0m
+D (32669) emac_esp32: receive len= 60[0m
+D (34669) emac_esp32: receive len= 60[0m
+D (36459) emac_esp32: receive len= 72[0m
+D (36669) emac_esp32: receive len= 60[0m
+D (37659) emac_esp32: receive len= 60[0m
+D (38039) emac_esp32: receive len= 108[0m
+D (39699) emac_esp32: receive len= 60[0m
+D (41679) emac_esp32: receive len= 60[0m
+D (43679) emac_esp32: receive len= 60[0m
+D (43909) emac_esp32: receive len= 337[0m
+D (45679) emac_esp32: receive len= 60[0m
+D (45799) emac_esp32: receive len= 346[0m
+D (45799) emac_esp32: receive len= 366[0m
+D (45799) emac_esp32: receive len= 0[0m
+D (47679) emac_esp32: receive len= 60[0m
+D (47939) emac_esp32: receive len= 70[0m
+D (48819) emac_esp32: receive len= 62[0m
+D (49679) emac_esp32: receive len= 60[0m
+D (49819) emac_esp32: receive len= 342[0m
+D (49819) emac_esp32: receive len= 342[0m
+D (50819) esp_netif_lwip: esp_netif_dhcpc_cb lwip-netif:0x3ffba5e8[0m
+D (50819) esp_netif_lwip: if0x3ffba564 ip changed=1[0m
+D (50819) event: running post IP_EVENT:4 with handler 0x400de8f8 and context 0x3ffba828 on loop 0x3ffb95d0[0m
+D (50829) esp_netif_handlers: esp_netif action got_ip with netif0x3ffba564 from event_id=4[0m
+[0;32mI (50829) esp_netif_handlers: example_connect: eth ip: 192.168.34.182, mask: 255.255.254.0, gw: 192.168.34.252[0m
+D (50839) event: running post IP_EVENT:4 with handler 0x400da610 and context 0x3ffba840 on loop 0x3ffb95d0[0m
+[0;32mI (50849) example_connect: Got IPv4 event: Interface "example_connect: eth" address: 192.168.34.182[0m
+[0;32mI (50859) example_connect: Connected to example_connect: eth[0m
+D (50869) esp_netif_lwip: esp_netif_get_ip_info esp_netif:0x3ffba564[0m
+[0;32mI (50879) example_connect: - IPv4 address: 192.168.34.182[0m
+[0;32mI (50879) uart: ESP_INTR_FLAG_IRAM flag not set while CONFIG_UART_ISR_IN_IRAM is enabled, flag updated[0m
+D (50889) intr_alloc: Connected src 34 to int 17 (cpu 0)[0m
+Waiting IP0 from stdin:
+
+[0;32mI (50949) MASTER_TEST: IP(0) = [192.168.34.181] set from stdin.[0m
+Waiting IP1 from stdin:
+
+[0;32mI (50949) MASTER_TEST: IP(1) = [192.168.34.181] set from stdin.[0m
+Waiting IP2 from stdin:
+
+[0;32mI (50959) MASTER_TEST: IP(2) = [192.168.34.181] set from stdin.[0m
+[0;32mI (50959) MASTER_TEST: IP(3) is not set in the table.[0m
+[0;32mI (50969) MASTER_TEST: Configured 3 IP addresse(s).[0m
+D (50979) MB_PORT_COMMON: vMBPortSetMode: Port enter critical.[0m
+D (50979) MB_PORT_COMMON: vMBPortSetMode: Port exit critical[0m
+[0;32mI (50979) MASTER_TEST: Modbus master stack initialized...[0m
+[0;32mI (50999) MB_TCP_MASTER_PORT: TCP master stack initialized.[0m
+D (50999) MB_PORT_COMMON: TCP Master port enable.[0m
+[0;32mI (51009) MB_TCP_MASTER_PORT: Host[IP]: "192.168.34.181"[192.168.34.181][0m
+[0;32mI (51009) MB_TCP_MASTER_PORT: Add slave IP: 192.168.34.181[0m
+[0;32mI (51009) MB_TCP_MASTER_PORT: Host[IP]: "192.168.34.181"[192.168.34.181][0m
+[0;32mI (51019) MB_TCP_MASTER_PORT: Add slave IP: 192.168.34.181[0m
+[0;32mI (51019) MB_TCP_MASTER_PORT: Host[IP]: "192.168.34.181"[192.168.34.181][0m
+[0;32mI (51039) MB_TCP_MASTER_PORT: Add slave IP: 192.168.34.181[0m
+[0;32mI (51049) MB_TCP_MASTER_PORT: Connecting to slaves...[0m
+-D (51049) emac_esp32: receive len= 60[0m
+D (51059) emac_esp32: receive len= 60[0m
+D (51059) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), connected 1 slave(s), error = 0.[0m
+-D (51069) emac_esp32: receive len= 60[0m
+D (51079) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), connected 2 slave(s), error = 0.[0m
+-D (51089) emac_esp32: receive len= 60[0m
+D (51089) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), connected 3 slave(s), error = 0.[0m
+[0;32mI (51099) MB_TCP_MASTER_PORT: Connected 3 slaves, start polling...[0m
+D (51109) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_READY[0m
+[0;32mI (51159) MASTER_TEST: Start modbus test...[0m
+D (51159) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (51159) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (51169) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (51169) POLL transmit buffer: 04 00 00 00 02 [0m
+D (51179) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x200, 12 (bytes), errno 0[0m
+D (51189) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (51189) emac_esp32: receive len= 67[0m
+D (51199) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (51199) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (51209) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (51209) POLL sent buffer: 04 00 00 00 02 [0m
+D (51229) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x200, errno=119(Connection already in progress)[0m
+D (51239) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (51239) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (51239) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2946 [ms].[0m
+D (51249) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (51259) POLL receive buffer: 04 04 5c 29 3f 8f [0m
+D (51269) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (51279) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (51279) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (51289) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (51289) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (51299) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (51309) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 128134.[0m
+D (51299) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(0) = ESP_OK[0m
+[0;32mI (51329) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+D (51339) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (51339) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (51349) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (51359) POLL transmit buffer: 03 00 00 00 02 [0m
+D (51369) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x201, 12 (bytes), errno 0[0m
+D (51369) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (51369) emac_esp32: receive len= 67[0m
+D (51389) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (51389) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (51399) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (51399) POLL sent buffer: 03 00 00 00 02 [0m
+D (51409) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x201, errno=119(Connection already in progress)[0m
+D (51419) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (51419) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (51429) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2946 [ms].[0m
+D (51439) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (51449) POLL receive buffer: 03 04 85 1f 3f ab [0m
+D (51449) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (51459) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (51459) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (51469) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (51479) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (51489) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (51499) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 127707.[0m
+D (51489) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(1) = ESP_OK[0m
+[0;32mI (51509) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 1.340000 (0x3fab851f) read successful.[0m
+D (51529) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (51529) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (51539) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (51539) POLL transmit buffer: 04 00 02 00 02 [0m
+D (51549) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x202, 12 (bytes), errno 0[0m
+D (51559) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (51559) emac_esp32: receive len= 67[0m
+D (51569) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (51569) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (51579) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (51579) POLL sent buffer: 04 00 02 00 02 [0m
+D (51589) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x202, errno=119(Connection already in progress)[0m
+D (51609) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (51609) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (51609) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2946 [ms].[0m
+D (51619) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (51629) POLL receive buffer: 04 04 c2 8f 40 15 [0m
+D (51629) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (51649) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (51649) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (51659) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (51659) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (51669) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (51679) emac_esp32: receive len= 60[0m
+D (51679) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 128727.[0m
+D (51669) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(2) = ESP_OK[0m
+[0;32mI (51699) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+D (51709) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (51719) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (51719) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (51739) POLL transmit buffer: 03 00 02 00 02 [0m
+D (51739) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), send data successful: TID=0x100, 12 (bytes), errno 0[0m
+D (51739) emac_esp32: receive len= 67[0m
+D (51749) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (51749) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (51749) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (51769) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (51769) POLL sent buffer: 03 00 02 00 02 [0m
+D (51779) MB_TCP_MASTER_PORT: Socket(#55)(192.168.34.181) get data, length=13, TID=0x100, errno=119(Connection already in progress)[0m
+D (51789) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), frame received.[0m
+D (51789) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (51799) MB_TCP_MASTER_PORT: Slave #3, data processing left time 2948 [ms].[0m
+D (51809) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (51819) POLL receive buffer: 03 04 d7 0a 40 23 [0m
+D (51829) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (51829) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (51839) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (51839) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (51839) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (51859) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), data processing completed.[0m
+D (51869) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), processing time[us] = 115840.[0m
+D (51859) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(3) = ESP_OK[0m
+[0;32mI (51879) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+D (51889) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (51909) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (51909) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (51919) POLL transmit buffer: 04 00 04 00 02 [0m
+D (51919) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), send data successful: TID=0x101, 12 (bytes), errno 0[0m
+D (51929) emac_esp32: receive len= 67[0m
+D (51939) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (51939) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (51939) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (51949) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (51949) POLL sent buffer: 04 00 04 00 02 [0m
+D (51959) MB_TCP_MASTER_PORT: Socket(#55)(192.168.34.181) get data, length=13, TID=0x101, errno=119(Connection already in progress)[0m
+D (51979) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), frame received.[0m
+D (51979) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (51989) MB_TCP_MASTER_PORT: Slave #3, data processing left time 2948 [ms].[0m
+D (51989) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (51999) POLL receive buffer: 04 04 d7 0a 40 63 [0m
+D (52009) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (52019) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (52029) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (52029) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (52029) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (52039) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), data processing completed.[0m
+D (52049) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), processing time[us] = 115425.[0m
+D (52039) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(4) = ESP_OK[0m
+[0;32mI (52069) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+D (52079) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (52089) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (52089) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (52099) POLL transmit buffer: 03 00 04 00 02 [0m
+D (52109) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), send data successful: TID=0x00, 12 (bytes), errno 0[0m
+D (52109) emac_esp32: receive len= 67[0m
+D (52119) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (52129) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (52129) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (52129) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (52149) POLL sent buffer: 03 00 04 00 02 [0m
+D (52149) MB_TCP_MASTER_PORT: Socket(#54)(192.168.34.181) get data, length=13, TID=0x00, errno=119(Connection already in progress)[0m
+D (52159) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), frame received.[0m
+D (52159) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (52169) MB_TCP_MASTER_PORT: Slave #5, data processing left time 2948 [ms].[0m
+D (52169) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (52189) POLL receive buffer: 03 04 eb 85 40 71 [0m
+D (52199) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (52199) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (52209) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (52209) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (52209) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (52219) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), data processing completed.[0m
+D (52239) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), processing time[us] = 114776.[0m
+D (52219) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(5) = ESP_OK[0m
+[0;32mI (52249) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+D (52259) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (52269) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (52279) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (52289) POLL transmit buffer: 03 00 08 00 64 [0m
+D (52289) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x203, 12 (bytes), errno 0[0m
+D (52289) emac_esp32: receive len= 263[0m
+D (52299) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (52319) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (52319) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (52319) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (52329) POLL sent buffer: 03 00 08 00 64 [0m
+D (52329) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=209, TID=0x203, errno=119(Connection already in progress)[0m
+D (52339) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (52339) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (52359) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2948 [ms].[0m
+D (52359) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (52379) POLL receive buffer: 03 c8 00 00 00 00 00 00 00 00 00 00 00 00 00 00 [0m
+D (52379) POLL receive buffer: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 [0m
+D (52389) POLL receive buffer: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 [0m
+D (52399) POLL receive buffer: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 [0m
+D (52409) POLL receive buffer: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 [0m
+D (52409) POLL receive buffer: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 [0m
+D (52419) POLL receive buffer: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 [0m
+D (52429) POLL receive buffer: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 [0m
+D (52429) POLL receive buffer: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 [0m
+D (52439) POLL receive buffer: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 [0m
+D (52449) POLL receive buffer: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 [0m
+D (52459) POLL receive buffer: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 [0m
+D (52459) POLL receive buffer: 00 00 00 00 00 00 00 00 00 00 [0m
+D (52469) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (52469) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (52479) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (52479) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (52479) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (52499) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (52509) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 204599.[0m
+D (52499) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(6) = ESP_OK[0m
+[0;32mI (52529) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0x00000000) read successful.[0m
+D (52529) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (52549) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (52549) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (52559) POLL transmit buffer: 10 00 08 00 64 c8 aa aa aa aa aa aa aa aa aa aa [0m
+D (52559) POLL transmit buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52569) POLL transmit buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52579) POLL transmit buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52589) POLL transmit buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52599) POLL transmit buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52599) POLL transmit buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52609) POLL transmit buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52619) POLL transmit buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52619) POLL transmit buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52639) POLL transmit buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52639) POLL transmit buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52649) POLL transmit buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52649) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x204, 213 (bytes), errno 0[0m
+D (52659) emac_esp32: receive len= 66[0m
+D (52669) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (52679) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (52679) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (52679) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (52689) POLL sent buffer: 10 00 08 00 64 c8 aa aa aa aa aa aa aa aa aa aa [0m
+D (52689) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=12, TID=0x204, errno=119(Connection already in progress)[0m
+D (52699) POLL sent buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52719) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (52719) emac_esp32: receive len= 108[0m
+D (52719) POLL sent buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52729) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2935 [ms].[0m
+D (52739) POLL sent buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52759) POLL sent buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52769) POLL sent buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52769) POLL sent buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52779) POLL sent buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52779) POLL sent buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52789) POLL sent buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52789) POLL sent buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52809) POLL sent buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52809) POLL sent buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (52819) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (52819) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (52829) POLL receive buffer: 10 00 08 00 64 [0m
+D (52829) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (52849) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (52849) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (52859) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (52859) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (52869) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (52869) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 205728.[0m
+D (52869) MB_CONTROLLER_MASTER: mbc_tcp_master_set_parameter: Good response for set cid(6) = ESP_OK[0m
+[0;32mI (52899) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa), write successful.[0m
+D (52909) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (52909) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (52919) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (52919) POLL transmit buffer: 01 00 00 00 08 [0m
+D (52939) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x205, 12 (bytes), errno 0[0m
+D (52939) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (52939) emac_esp32: receive len= 64[0m
+D (52949) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (52949) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (52959) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (52959) POLL sent buffer: 01 00 00 00 08 [0m
+D (52979) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=10, TID=0x205, errno=119(Connection already in progress)[0m
+D (52989) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (52989) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (52989) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2946 [ms].[0m
+D (52999) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (53019) POLL receive buffer: 01 01 55 [0m
+D (53019) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (53029) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (53029) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (53039) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (53039) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (53049) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (53069) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 127534.[0m
+D (53059) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(7) = ESP_OK[0m
+[0;32mI (53079) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0x55) read successful.[0m
+D (53089) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (53089) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (53099) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (53109) POLL transmit buffer: 01 00 08 00 08 [0m
+D (53119) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x206, 12 (bytes), errno 0[0m
+D (53119) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (53119) emac_esp32: receive len= 64[0m
+D (53139) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (53139) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (53149) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (53149) POLL sent buffer: 01 00 08 00 08 [0m
+D (53159) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=10, TID=0x206, errno=119(Connection already in progress)[0m
+D (53169) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (53169) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (53179) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2946 [ms].[0m
+D (53189) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (53199) POLL receive buffer: 01 01 aa [0m
+D (53199) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (53209) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (53209) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (53219) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (53229) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (53239) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (53249) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 127147.[0m
+D (53239) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(8) = ESP_OK[0m
+[0;32mI (53259) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xaa) read successful.[0m
+D (53699) emac_esp32: receive len= 60[0m
+D (53769) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (53769) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (53779) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (53779) POLL transmit buffer: 04 00 00 00 02 [0m
+D (53779) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x207, 12 (bytes), errno 0[0m
+D (53789) emac_esp32: receive len= 67[0m
+D (53799) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (53809) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (53809) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (53809) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (53819) POLL sent buffer: 04 00 00 00 02 [0m
+D (53819) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x207, errno=119(Connection already in progress)[0m
+D (53849) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (53849) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (53849) emac_esp32: receive len= 60[0m
+D (53849) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2948 [ms].[0m
+D (53859) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (53869) POLL receive buffer: 04 04 5c 29 3f 8f [0m
+D (53879) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (53889) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (53889) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (53899) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (53899) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (53909) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (53919) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 126634.[0m
+D (53909) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(0) = ESP_OK[0m
+[0;32mI (53939) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+D (53949) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (53949) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (53959) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (53959) POLL transmit buffer: 03 00 00 00 02 [0m
+D (53979) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x208, 12 (bytes), errno 0[0m
+D (53979) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (53979) emac_esp32: receive len= 67[0m
+D (53989) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (53989) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (54009) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (54009) POLL sent buffer: 03 00 00 00 02 [0m
+D (54019) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x208, errno=119(Connection already in progress)[0m
+D (54029) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (54029) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (54029) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2946 [ms].[0m
+D (54049) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (54059) POLL receive buffer: 03 04 28 f6 40 1c [0m
+D (54059) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (54069) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (54069) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (54079) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (54089) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (54099) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (54099) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 118268.[0m
+D (54099) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(1) = ESP_OK[0m
+[0;32mI (54119) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 2.440000 (0x401c28f6) read successful.[0m
+D (54139) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (54139) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (54149) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (54149) POLL transmit buffer: 04 00 02 00 02 [0m
+D (54159) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x209, 12 (bytes), errno 0[0m
+D (54169) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (54169) emac_esp32: receive len= 67[0m
+D (54179) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (54179) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (54189) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (54189) POLL sent buffer: 04 00 02 00 02 [0m
+D (54199) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x209, errno=119(Connection already in progress)[0m
+D (54219) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (54219) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (54229) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2936 [ms].[0m
+D (54229) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (54239) POLL receive buffer: 04 04 c2 8f 40 15 [0m
+D (54249) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (54259) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (54259) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (54269) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (54269) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (54279) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (54289) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 127487.[0m
+D (54279) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(2) = ESP_OK[0m
+[0;32mI (54309) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+D (54319) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (54319) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (54329) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (54339) POLL transmit buffer: 03 00 02 00 02 [0m
+D (54349) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), send data successful: TID=0x102, 12 (bytes), errno 0[0m
+D (54349) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (54349) emac_esp32: receive len= 67[0m
+D (54359) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (54359) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (54379) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (54379) POLL sent buffer: 03 00 02 00 02 [0m
+D (54389) MB_TCP_MASTER_PORT: Socket(#55)(192.168.34.181) get data, length=13, TID=0x102, errno=119(Connection already in progress)[0m
+D (54399) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), frame received.[0m
+D (54399) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (54409) MB_TCP_MASTER_PORT: Slave #3, data processing left time 2936 [ms].[0m
+D (54419) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (54429) POLL receive buffer: 03 04 d7 0a 40 23 [0m
+D (54439) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (54439) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (54439) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (54449) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (54449) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (54469) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), data processing completed.[0m
+D (54479) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), processing time[us] = 127413.[0m
+D (54469) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(3) = ESP_OK[0m
+[0;32mI (54489) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+D (54499) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (54509) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (54519) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (54529) POLL transmit buffer: 04 00 04 00 02 [0m
+D (54529) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), send data successful: TID=0x103, 12 (bytes), errno 0[0m
+D (54529) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (54539) emac_esp32: receive len= 67[0m
+D (54549) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (54549) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (54559) MB_TCP_MASTER_PORT: Set select timeout, left time: 2973 ms.[0m
+D (54559) POLL sent buffer: 04 00 04 00 02 [0m
+D (54569) MB_TCP_MASTER_PORT: Socket(#55)(192.168.34.181) get data, length=13, TID=0x103, errno=119(Connection already in progress)[0m
+D (54589) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), frame received.[0m
+D (54589) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (54599) MB_TCP_MASTER_PORT: Slave #3, data processing left time 2936 [ms].[0m
+D (54599) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (54609) POLL receive buffer: 04 04 d7 0a 40 63 [0m
+D (54619) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (54629) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (54629) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (54639) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (54639) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (54649) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), data processing completed.[0m
+D (54659) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), processing time[us] = 127736.[0m
+D (54649) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(4) = ESP_OK[0m
+[0;32mI (54679) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+D (54689) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (54689) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (54699) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (54709) POLL transmit buffer: 03 00 04 00 02 [0m
+D (54719) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), send data successful: TID=0x01, 12 (bytes), errno 0[0m
+D (54719) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (54719) emac_esp32: receive len= 67[0m
+D (54729) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (54729) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (54739) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (54749) POLL sent buffer: 03 00 04 00 02 [0m
+D (54759) MB_TCP_MASTER_PORT: Socket(#54)(192.168.34.181) get data, length=13, TID=0x01, errno=119(Connection already in progress)[0m
+D (54769) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), frame received.[0m
+D (54769) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (54779) MB_TCP_MASTER_PORT: Slave #5, data processing left time 2936 [ms].[0m
+D (54779) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (54799) POLL receive buffer: 03 04 eb 85 40 71 [0m
+D (54799) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (54809) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (54809) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (54819) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (54819) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (54839) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), data processing completed.[0m
+D (54849) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), processing time[us] = 128367.[0m
+D (54839) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(5) = ESP_OK[0m
+[0;32mI (54859) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+D (54869) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (54879) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (54889) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (54889) POLL transmit buffer: 03 00 08 00 64 [0m
+D (54899) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x20a, 12 (bytes), errno 0[0m
+D (54899) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (54909) emac_esp32: receive len= 263[0m
+D (54919) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (54919) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (54929) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (54929) POLL sent buffer: 03 00 08 00 64 [0m
+D (54939) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=209, TID=0x20a, errno=119(Connection already in progress)[0m
+D (54959) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (54959) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (54959) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2946 [ms].[0m
+D (54969) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (54979) POLL receive buffer: 03 c8 aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (54989) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (54999) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (55009) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (55009) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (55019) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (55029) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (55029) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (55039) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (55049) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (55059) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (55059) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (55069) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa [0m
+D (55069) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (55079) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (55089) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (55099) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (55099) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (55109) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (55119) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 218045.[0m
+D (55109) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(6) = ESP_OK[0m
+[0;32mI (55139) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+D (55149) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (55149) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (55159) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (55159) POLL transmit buffer: 01 00 00 00 08 [0m
+D (55179) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x20b, 12 (bytes), errno 0[0m
+D (55179) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (55179) emac_esp32: receive len= 64[0m
+D (55189) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (55189) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (55199) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (55199) POLL sent buffer: 01 00 00 00 08 [0m
+D (55219) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=10, TID=0x20b, errno=119(Connection already in progress)[0m
+D (55229) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (55229) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (55229) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2946 [ms].[0m
+D (55239) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (55259) POLL receive buffer: 01 01 55 [0m
+D (55259) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (55269) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (55269) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (55279) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (55279) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (55289) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (55309) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 127742.[0m
+D (55289) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(7) = ESP_OK[0m
+[0;32mI (55319) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0x55) read successful.[0m
+D (55329) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (55329) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (55339) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (55349) POLL transmit buffer: 01 00 08 00 08 [0m
+D (55359) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x20c, 12 (bytes), errno 0[0m
+D (55359) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (55359) emac_esp32: receive len= 64[0m
+D (55369) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (55369) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (55389) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (55389) POLL sent buffer: 01 00 08 00 08 [0m
+D (55399) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=10, TID=0x20c, errno=119(Connection already in progress)[0m
+D (55409) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (55409) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (55419) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2936 [ms].[0m
+D (55429) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (55439) POLL receive buffer: 01 01 aa [0m
+D (55449) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (55449) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (55449) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (55459) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (55469) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (55479) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (55489) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 127514.[0m
+D (55479) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(8) = ESP_OK[0m
+[0;32mI (55499) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xaa) read successful.[0m
+D (55679) emac_esp32: receive len= 60[0m
+D (56009) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (56009) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (56019) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (56019) POLL transmit buffer: 04 00 00 00 02 [0m
+D (56019) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x20d, 12 (bytes), errno 0[0m
+D (56029) emac_esp32: receive len= 67[0m
+D (56039) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (56049) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (56049) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (56049) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (56059) POLL sent buffer: 04 00 00 00 02 [0m
+D (56059) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x20d, errno=119(Connection already in progress)[0m
+D (56089) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (56089) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (56089) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2948 [ms].[0m
+D (56099) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (56109) POLL receive buffer: 04 04 5c 29 3f 8f [0m
+D (56109) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (56129) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (56129) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (56129) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (56129) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (56149) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (56149) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 114970.[0m
+D (56149) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(0) = ESP_OK[0m
+[0;32mI (56179) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+D (56189) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (56189) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (56199) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (56199) POLL transmit buffer: 03 00 00 00 02 [0m
+D (56219) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x20e, 12 (bytes), errno 0[0m
+D (56219) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (56219) emac_esp32: receive len= 67[0m
+D (56229) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (56229) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (56239) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (56249) POLL sent buffer: 03 00 00 00 02 [0m
+D (56259) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x20e, errno=119(Connection already in progress)[0m
+D (56269) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (56269) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (56269) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2946 [ms].[0m
+D (56279) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (56299) POLL receive buffer: 03 04 8f 5c 40 62 [0m
+D (56299) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (56309) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (56309) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (56319) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (56319) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (56329) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (56349) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 127654.[0m
+D (56339) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(1) = ESP_OK[0m
+[0;32mI (56359) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 3.540000 (0x40628f5c) read successful.[0m
+D (56369) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (56369) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (56389) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (56389) POLL transmit buffer: 04 00 02 00 02 [0m
+D (56399) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x20f, 12 (bytes), errno 0[0m
+D (56399) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (56409) emac_esp32: receive len= 67[0m
+D (56419) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (56419) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (56429) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (56429) POLL sent buffer: 04 00 02 00 02 [0m
+D (56439) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x20f, errno=119(Connection already in progress)[0m
+D (56459) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (56459) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (56459) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2946 [ms].[0m
+D (56469) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (56479) POLL receive buffer: 04 04 c2 8f 40 15 [0m
+D (56479) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (56489) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (56499) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (56509) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (56509) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (56519) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (56529) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 127831.[0m
+D (56519) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(2) = ESP_OK[0m
+[0;32mI (56539) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+D (56559) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (56559) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (56569) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (56569) POLL transmit buffer: 03 00 02 00 02 [0m
+D (56589) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), send data successful: TID=0x104, 12 (bytes), errno 0[0m
+D (56589) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (56589) emac_esp32: receive len= 67[0m
+D (56599) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (56599) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (56609) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (56609) POLL sent buffer: 03 00 02 00 02 [0m
+D (56629) MB_TCP_MASTER_PORT: Socket(#55)(192.168.34.181) get data, length=13, TID=0x104, errno=119(Connection already in progress)[0m
+D (56639) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), frame received.[0m
+D (56639) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (56649) MB_TCP_MASTER_PORT: Slave #3, data processing left time 2936 [ms].[0m
+D (56649) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (56669) POLL receive buffer: 03 04 d7 0a 40 23 [0m
+D (56679) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (56679) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (56679) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (56689) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (56689) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (56699) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), data processing completed.[0m
+D (56719) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), processing time[us] = 127568.[0m
+D (56709) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(3) = ESP_OK[0m
+[0;32mI (56729) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+D (56739) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (56749) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (56759) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (56769) POLL transmit buffer: 04 00 04 00 02 [0m
+D (56769) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), send data successful: TID=0x105, 12 (bytes), errno 0[0m
+D (56769) emac_esp32: receive len= 67[0m
+D (56779) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (56789) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (56789) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (56799) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (56799) POLL sent buffer: 04 00 04 00 02 [0m
+D (56809) MB_TCP_MASTER_PORT: Socket(#55)(192.168.34.181) get data, length=13, TID=0x105, errno=119(Connection already in progress)[0m
+D (56819) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (56819) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), frame received.[0m
+D (56829) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (56839) MB_TCP_MASTER_PORT: Slave #3, data processing left time 2946 [ms].[0m
+D (56849) POLL receive buffer: 04 04 d7 0a 40 63 [0m
+D (56859) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (56859) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (56859) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (56879) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (56879) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (56889) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), data processing completed.[0m
+D (56899) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), processing time[us] = 115947.[0m
+D (56889) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(4) = ESP_OK[0m
+[0;32mI (56909) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+D (56929) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (56939) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (56939) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (56949) POLL transmit buffer: 03 00 04 00 02 [0m
+D (56949) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), send data successful: TID=0x02, 12 (bytes), errno 0[0m
+D (56959) emac_esp32: receive len= 67[0m
+D (56969) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (56969) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (56969) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (56979) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (56979) POLL sent buffer: 03 00 04 00 02 [0m
+D (56999) MB_TCP_MASTER_PORT: Socket(#54)(192.168.34.181) get data, length=13, TID=0x02, errno=119(Connection already in progress)[0m
+D (57009) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), frame received.[0m
+D (57009) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (57019) MB_TCP_MASTER_PORT: Slave #5, data processing left time 2948 [ms].[0m
+D (57019) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (57029) POLL receive buffer: 03 04 eb 85 40 71 [0m
+D (57049) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (57049) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (57049) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (57059) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (57059) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (57069) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), data processing completed.[0m
+D (57079) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), processing time[us] = 115621.[0m
+D (57069) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(5) = ESP_OK[0m
+[0;32mI (57099) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+D (57109) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (57119) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (57119) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (57139) POLL transmit buffer: 03 00 08 00 64 [0m
+D (57139) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x210, 12 (bytes), errno 0[0m
+D (57139) emac_esp32: receive len= 263[0m
+D (57149) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (57149) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (57159) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (57169) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (57169) POLL sent buffer: 03 00 08 00 64 [0m
+D (57179) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=209, TID=0x210, errno=119(Connection already in progress)[0m
+D (57189) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (57189) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (57209) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2948 [ms].[0m
+D (57209) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (57219) POLL receive buffer: 03 c8 aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (57229) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (57229) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (57239) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (57259) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (57259) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (57269) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (57269) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (57279) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (57279) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (57299) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (57299) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (57309) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa [0m
+D (57319) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (57319) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (57319) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (57329) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (57339) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (57349) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (57359) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 206155.[0m
+D (57349) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(6) = ESP_OK[0m
+[0;32mI (57369) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+D (57389) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (57389) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (57399) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (57399) POLL transmit buffer: 01 00 00 00 08 [0m
+D (57409) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x211, 12 (bytes), errno 0[0m
+D (57419) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (57419) emac_esp32: receive len= 64[0m
+D (57429) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (57429) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (57439) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (57439) POLL sent buffer: 01 00 00 00 08 [0m
+D (57449) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=10, TID=0x211, errno=119(Connection already in progress)[0m
+D (57469) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (57469) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (57479) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2936 [ms].[0m
+D (57479) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (57489) POLL receive buffer: 01 01 55 [0m
+D (57489) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (57499) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (57509) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (57519) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (57519) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (57529) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (57539) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 127277.[0m
+D (57529) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(7) = ESP_OK[0m
+[0;32mI (57559) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0x55) read successful.[0m
+D (57569) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (57569) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (57579) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (57579) POLL transmit buffer: 01 00 08 00 08 [0m
+D (57599) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x212, 12 (bytes), errno 0[0m
+D (57599) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (57599) emac_esp32: receive len= 64[0m
+D (57609) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (57609) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (57619) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (57619) POLL sent buffer: 01 00 08 00 08 [0m
+D (57639) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=10, TID=0x212, errno=119(Connection already in progress)[0m
+D (57649) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (57649) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (57659) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2936 [ms].[0m
+D (57659) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (57679) POLL receive buffer: 01 01 aa [0m
+D (57679) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (57679) emac_esp32: receive len= 60[0m
+D (57689) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (57699) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (57699) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (57699) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (57709) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (57729) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 128405.[0m
+D (57719) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(8) = ESP_OK[0m
+[0;32mI (57739) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xaa) read successful.[0m
+D (58249) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (58249) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (58259) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (58259) POLL transmit buffer: 04 00 00 00 02 [0m
+D (58259) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x213, 12 (bytes), errno 0[0m
+D (58269) emac_esp32: receive len= 67[0m
+D (58279) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (58289) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (58289) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (58289) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (58299) POLL sent buffer: 04 00 00 00 02 [0m
+D (58299) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x213, errno=119(Connection already in progress)[0m
+D (58329) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (58329) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (58329) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2948 [ms].[0m
+D (58339) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (58349) POLL receive buffer: 04 04 5c 29 3f 8f [0m
+D (58349) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (58369) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (58369) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (58369) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (58369) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (58389) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (58389) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 115164.[0m
+D (58389) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(0) = ESP_OK[0m
+[0;32mI (58419) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+D (58429) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (58429) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (58439) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (58439) POLL transmit buffer: 03 00 00 00 02 [0m
+D (58449) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x214, 12 (bytes), errno 0[0m
+D (58449) emac_esp32: receive len= 67[0m
+D (58459) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (58469) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (58469) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (58469) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (58489) POLL sent buffer: 03 00 00 00 02 [0m
+D (58489) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x214, errno=119(Connection already in progress)[0m
+D (58509) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (58509) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (58509) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2949 [ms].[0m
+D (58519) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (58539) POLL receive buffer: 03 04 7a e1 40 94 [0m
+D (58539) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (58549) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (58549) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (58559) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (58559) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (58569) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (58579) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 115089.[0m
+D (58579) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(1) = ESP_OK[0m
+[0;32mI (58599) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 4.640000 (0x40947ae1) read successful.[0m
+D (58609) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (58609) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (58629) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (58629) POLL transmit buffer: 04 00 02 00 02 [0m
+D (58639) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x215, 12 (bytes), errno 0[0m
+D (58639) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (58639) emac_esp32: receive len= 67[0m
+D (58649) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (58659) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (58669) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (58669) POLL sent buffer: 04 00 02 00 02 [0m
+D (58679) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x215, errno=119(Connection already in progress)[0m
+D (58689) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (58689) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (58709) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2937 [ms].[0m
+D (58709) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (58719) POLL receive buffer: 04 04 c2 8f 40 15 [0m
+D (58729) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (58729) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (58729) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (58739) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (58749) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (58759) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (58769) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 126578.[0m
+D (58759) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(2) = ESP_OK[0m
+[0;32mI (58779) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+D (58799) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (58799) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (58809) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (58809) POLL transmit buffer: 03 00 02 00 02 [0m
+D (58819) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), send data successful: TID=0x106, 12 (bytes), errno 0[0m
+D (58829) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (58829) emac_esp32: receive len= 67[0m
+D (58839) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (58839) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (58849) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (58849) POLL sent buffer: 03 00 02 00 02 [0m
+D (58869) MB_TCP_MASTER_PORT: Socket(#55)(192.168.34.181) get data, length=13, TID=0x106, errno=119(Connection already in progress)[0m
+D (58879) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), frame received.[0m
+D (58879) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (58889) MB_TCP_MASTER_PORT: Slave #3, data processing left time 2936 [ms].[0m
+D (58889) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (58899) POLL receive buffer: 03 04 d7 0a 40 23 [0m
+D (58919) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (58919) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (58919) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (58929) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (58929) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (58939) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), data processing completed.[0m
+D (58949) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), processing time[us] = 127547.[0m
+D (58939) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(3) = ESP_OK[0m
+[0;32mI (58969) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+D (58979) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (58979) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (58989) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (59009) POLL transmit buffer: 04 00 04 00 02 [0m
+D (59009) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), send data successful: TID=0x107, 12 (bytes), errno 0[0m
+D (59009) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (59009) emac_esp32: receive len= 67[0m
+D (59019) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (59019) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (59039) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (59039) POLL sent buffer: 04 00 04 00 02 [0m
+D (59049) MB_TCP_MASTER_PORT: Socket(#55)(192.168.34.181) get data, length=13, TID=0x107, errno=119(Connection already in progress)[0m
+D (59059) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), frame received.[0m
+D (59059) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (59069) MB_TCP_MASTER_PORT: Slave #3, data processing left time 2936 [ms].[0m
+D (59079) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (59089) POLL receive buffer: 04 04 d7 0a 40 63 [0m
+D (59099) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (59099) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (59099) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (59109) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (59119) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (59129) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), data processing completed.[0m
+D (59139) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), processing time[us] = 127516.[0m
+D (59129) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(4) = ESP_OK[0m
+[0;32mI (59149) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+D (59159) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (59169) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (59179) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (59189) POLL transmit buffer: 03 00 04 00 02 [0m
+D (59189) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), send data successful: TID=0x03, 12 (bytes), errno 0[0m
+D (59199) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (59199) emac_esp32: receive len= 67[0m
+D (59209) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (59209) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (59219) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (59219) POLL sent buffer: 03 00 04 00 02 [0m
+D (59229) MB_TCP_MASTER_PORT: Socket(#54)(192.168.34.181) get data, length=13, TID=0x03, errno=119(Connection already in progress)[0m
+D (59249) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), frame received.[0m
+D (59249) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (59259) MB_TCP_MASTER_PORT: Slave #5, data processing left time 2936 [ms].[0m
+D (59259) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (59269) POLL receive buffer: 03 04 eb 85 40 71 [0m
+D (59279) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (59289) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (59289) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (59299) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (59299) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (59309) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), data processing completed.[0m
+D (59319) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), processing time[us] = 127495.[0m
+D (59309) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(5) = ESP_OK[0m
+[0;32mI (59339) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+D (59349) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (59349) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (59359) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (59369) POLL transmit buffer: 03 00 08 00 64 [0m
+D (59379) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x216, 12 (bytes), errno 0[0m
+D (59379) emac_esp32: receive len= 263[0m
+D (59389) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (59389) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (59389) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (59399) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (59409) POLL sent buffer: 03 00 08 00 64 [0m
+D (59419) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=209, TID=0x216, errno=119(Connection already in progress)[0m
+D (59429) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (59429) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (59439) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2948 [ms].[0m
+D (59439) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (59459) POLL receive buffer: 03 c8 aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (59469) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (59469) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (59479) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (59479) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (59499) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (59509) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (59509) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (59519) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (59519) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (59529) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (59549) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (59549) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa [0m
+D (59559) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (59559) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (59559) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (59569) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (59569) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (59579) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (59599) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 205448.[0m
+D (59589) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(6) = ESP_OK[0m
+[0;32mI (59609) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+D (59619) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (59619) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (59639) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (59649) POLL transmit buffer: 01 00 00 00 08 [0m
+D (59649) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x217, 12 (bytes), errno 0[0m
+D (59649) emac_esp32: receive len= 64[0m
+D (59659) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (59669) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (59669) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (59679) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (59679) emac_esp32: receive len= 60[0m
+D (59679) POLL sent buffer: 01 00 00 00 08 [0m
+D (59689) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=10, TID=0x217, errno=119(Connection already in progress)[0m
+D (59709) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (59709) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (59719) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2947 [ms].[0m
+D (59719) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (59729) POLL receive buffer: 01 01 55 [0m
+D (59739) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (59739) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (59749) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (59759) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (59759) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (59769) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (59779) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 116519.[0m
+D (59769) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(7) = ESP_OK[0m
+[0;32mI (59789) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0x55) read successful.[0m
+D (59809) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (59819) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (59819) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (59829) POLL transmit buffer: 01 00 08 00 08 [0m
+D (59829) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x218, 12 (bytes), errno 0[0m
+D (59839) emac_esp32: receive len= 64[0m
+D (59849) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (59859) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (59859) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (59859) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (59869) POLL sent buffer: 01 00 08 00 08 [0m
+D (59879) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=10, TID=0x218, errno=119(Connection already in progress)[0m
+D (59889) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (59889) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (59899) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2948 [ms].[0m
+D (59899) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (59909) POLL receive buffer: 01 01 aa [0m
+D (59919) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (59929) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (59939) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (59939) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (59939) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (59949) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (59959) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 114663.[0m
+D (59949) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(8) = ESP_OK[0m
+[0;32mI (59979) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xaa) read successful.[0m
+D (60179) emac_esp32: receive len= 60[0m
+D (60489) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (60489) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (60499) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (60499) POLL transmit buffer: 04 00 00 00 02 [0m
+D (60499) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x219, 12 (bytes), errno 0[0m
+D (60509) emac_esp32: receive len= 67[0m
+D (60519) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (60529) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (60529) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (60529) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (60539) POLL sent buffer: 04 00 00 00 02 [0m
+D (60539) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x219, errno=119(Connection already in progress)[0m
+D (60569) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (60569) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (60569) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (60579) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2937 [ms].[0m
+D (60579) POLL receive buffer: 04 04 5c 29 3f 8f [0m
+D (60589) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (60599) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (60609) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (60619) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (60619) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (60629) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (60629) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 114697.[0m
+D (60629) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(0) = ESP_OK[0m
+[0;32mI (60659) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+D (60669) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (60669) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (60679) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (60679) POLL transmit buffer: 03 00 00 00 02 [0m
+D (60699) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x21a, 12 (bytes), errno 0[0m
+D (60699) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (60699) emac_esp32: receive len= 67[0m
+D (60709) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (60709) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (60719) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (60729) POLL sent buffer: 03 00 00 00 02 [0m
+D (60739) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x21a, errno=119(Connection already in progress)[0m
+D (60749) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (60749) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (60749) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2946 [ms].[0m
+D (60759) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (60779) POLL receive buffer: 03 04 ae 14 40 b7 [0m
+D (60779) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (60789) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (60789) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (60799) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (60799) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (60809) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (60829) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 128460.[0m
+D (60819) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(1) = ESP_OK[0m
+[0;32mI (60839) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 5.740000 (0x40b7ae14) read successful.[0m
+D (60849) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (60859) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (60869) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (60869) POLL transmit buffer: 04 00 02 00 02 [0m
+D (60879) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x21b, 12 (bytes), errno 0[0m
+D (60879) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (60889) emac_esp32: receive len= 67[0m
+D (60899) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (60899) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (60909) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (60909) POLL sent buffer: 04 00 02 00 02 [0m
+D (60919) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x21b, errno=119(Connection already in progress)[0m
+D (60939) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (60939) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (60939) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2946 [ms].[0m
+D (60949) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (60959) POLL receive buffer: 04 04 c2 8f 40 15 [0m
+D (60959) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (60969) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (60979) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (60989) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (60989) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (60999) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (61009) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 127787.[0m
+D (60999) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(2) = ESP_OK[0m
+[0;32mI (61029) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+D (61039) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (61039) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (61049) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (61049) POLL transmit buffer: 03 00 02 00 02 [0m
+D (61069) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), send data successful: TID=0x108, 12 (bytes), errno 0[0m
+D (61069) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (61069) emac_esp32: receive len= 67[0m
+D (61079) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (61079) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (61089) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (61089) POLL sent buffer: 03 00 02 00 02 [0m
+D (61109) MB_TCP_MASTER_PORT: Socket(#55)(192.168.34.181) get data, length=13, TID=0x108, errno=119(Connection already in progress)[0m
+D (61119) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), frame received.[0m
+D (61119) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (61119) MB_TCP_MASTER_PORT: Slave #3, data processing left time 2946 [ms].[0m
+D (61129) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (61149) POLL receive buffer: 03 04 d7 0a 40 23 [0m
+D (61149) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (61159) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (61159) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (61169) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (61169) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (61179) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), data processing completed.[0m
+D (61199) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), processing time[us] = 127722.[0m
+D (61189) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(3) = ESP_OK[0m
+[0;32mI (61209) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+D (61219) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (61219) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (61239) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (61239) POLL transmit buffer: 04 00 04 00 02 [0m
+D (61249) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), send data successful: TID=0x109, 12 (bytes), errno 0[0m
+D (61249) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (61249) emac_esp32: receive len= 67[0m
+D (61269) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (61269) emac_esp32: receive len= 70[0m
+D (61269) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (61279) MB_TCP_MASTER_PORT: Set select timeout, left time: 2973 ms.[0m
+D (61279) POLL sent buffer: 04 00 04 00 02 [0m
+D (61289) MB_TCP_MASTER_PORT: Socket(#55)(192.168.34.181) get data, length=13, TID=0x109, errno=119(Connection already in progress)[0m
+D (61299) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (61299) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), frame received.[0m
+D (61319) MB_TCP_MASTER_PORT: Slave #3, data processing left time 2934 [ms].[0m
+D (61319) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (61329) POLL receive buffer: 04 04 d7 0a 40 63 [0m
+D (61339) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (61339) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (61349) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (61359) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (61359) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (61369) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), data processing completed.[0m
+D (61379) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), processing time[us] = 128129.[0m
+D (61369) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(4) = ESP_OK[0m
+[0;32mI (61389) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+D (61409) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (61419) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (61419) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (61429) POLL transmit buffer: 03 00 04 00 02 [0m
+D (61429) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), send data successful: TID=0x04, 12 (bytes), errno 0[0m
+D (61439) emac_esp32: receive len= 67[0m
+D (61449) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (61459) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (61459) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (61459) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (61459) MB_TCP_MASTER_PORT: Socket(#54)(192.168.34.181) get data, length=13, TID=0x04, errno=119(Connection already in progress)[0m
+D (61479) POLL sent buffer: 03 00 04 00 02 [0m
+D (61489) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), frame received.[0m
+D (61489) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (61499) MB_TCP_MASTER_PORT: Slave #5, data processing left time 2947 [ms].[0m
+D (61499) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (61519) POLL receive buffer: 03 04 eb 85 40 71 [0m
+D (61529) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (61529) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (61539) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (61539) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (61539) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (61549) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), data processing completed.[0m
+D (61569) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), processing time[us] = 116256.[0m
+D (61549) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(5) = ESP_OK[0m
+[0;32mI (61579) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+D (61589) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (61599) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (61599) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (61619) POLL transmit buffer: 03 00 08 00 64 [0m
+D (61619) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x21c, 12 (bytes), errno 0[0m
+D (61619) emac_esp32: receive len= 263[0m
+D (61629) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (61639) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (61639) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (61649) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (61649) POLL sent buffer: 03 00 08 00 64 [0m
+D (61659) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=209, TID=0x21c, errno=119(Connection already in progress)[0m
+D (61669) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (61679) emac_esp32: receive len= 60[0m
+D (61669) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (61689) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2947 [ms].[0m
+D (61689) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (61709) POLL receive buffer: 03 c8 aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (61709) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (61719) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (61729) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (61739) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (61739) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (61749) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (61759) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (61759) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (61779) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (61779) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (61789) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (61799) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa [0m
+D (61799) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (61799) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (61809) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (61819) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (61819) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (61829) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (61839) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 206803.[0m
+D (61829) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(6) = ESP_OK[0m
+[0;32mI (61859) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+D (61869) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (61879) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (61879) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (61889) POLL transmit buffer: 01 00 00 00 08 [0m
+D (61889) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x21d, 12 (bytes), errno 0[0m
+D (61899) emac_esp32: receive len= 64[0m
+D (61909) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (61919) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (61919) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (61919) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (61929) POLL sent buffer: 01 00 00 00 08 [0m
+D (61929) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=10, TID=0x21d, errno=119(Connection already in progress)[0m
+D (61949) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (61949) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (61959) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2948 [ms].[0m
+D (61959) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (61979) POLL receive buffer: 01 01 55 [0m
+D (61979) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (61989) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (61999) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (61999) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (61999) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (62009) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (62019) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 114886.[0m
+D (62009) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(7) = ESP_OK[0m
+[0;32mI (62049) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0x55) read successful.[0m
+D (62049) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (62059) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (62059) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (62069) POLL transmit buffer: 01 00 08 00 08 [0m
+D (62079) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x21e, 12 (bytes), errno 0[0m
+D (62079) emac_esp32: receive len= 64[0m
+D (62089) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (62099) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (62099) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (62099) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (62119) POLL sent buffer: 01 00 08 00 08 [0m
+D (62119) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=10, TID=0x21e, errno=119(Connection already in progress)[0m
+D (62129) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (62129) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (62139) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2948 [ms].[0m
+D (62139) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (62169) POLL receive buffer: 01 01 aa [0m
+D (62169) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (62169) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (62179) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (62179) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (62179) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (62189) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (62209) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 114903.[0m
+D (62189) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(8) = ESP_OK[0m
+[0;32mI (62229) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xaa) read successful.[0m
+D (62729) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (62729) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (62739) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (62739) POLL transmit buffer: 04 00 00 00 02 [0m
+D (62739) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x21f, 12 (bytes), errno 0[0m
+D (62749) emac_esp32: receive len= 67[0m
+D (62759) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (62769) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (62769) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (62769) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (62779) POLL sent buffer: 04 00 00 00 02 [0m
+D (62779) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x21f, errno=119(Connection already in progress)[0m
+D (62799) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (62799) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (62809) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (62819) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2936 [ms].[0m
+D (62819) POLL receive buffer: 04 04 5c 29 3f 8f [0m
+D (62829) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (62849) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (62849) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (62849) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (62849) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (62869) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (62869) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 115437.[0m
+D (62869) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(0) = ESP_OK[0m
+[0;32mI (62899) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+D (62909) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (62909) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (62919) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (62919) POLL transmit buffer: 03 00 00 00 02 [0m
+D (62929) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x220, 12 (bytes), errno 0[0m
+D (62929) emac_esp32: receive len= 67[0m
+D (62939) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (62949) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (62949) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (62949) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (62969) POLL sent buffer: 03 00 00 00 02 [0m
+D (62969) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x220, errno=119(Connection already in progress)[0m
+D (62989) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (62989) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (62989) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2948 [ms].[0m
+D (62999) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (63019) POLL receive buffer: 03 04 e1 47 40 da [0m
+D (63019) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (63029) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (63029) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (63039) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (63039) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (63049) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (63059) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 115049.[0m
+D (63059) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(1) = ESP_OK[0m
+[0;32mI (63079) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 6.840000 (0x40dae147) read successful.[0m
+D (63089) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (63089) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (63109) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (63109) POLL transmit buffer: 04 00 02 00 02 [0m
+D (63119) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x221, 12 (bytes), errno 0[0m
+D (63119) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (63119) emac_esp32: receive len= 67[0m
+D (63129) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (63139) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (63149) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (63149) POLL sent buffer: 04 00 02 00 02 [0m
+D (63159) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x221, errno=119(Connection already in progress)[0m
+D (63169) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (63169) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (63189) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2937 [ms].[0m
+D (63189) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (63199) POLL receive buffer: 04 04 c2 8f 40 15 [0m
+D (63209) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (63209) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (63209) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (63219) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (63229) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (63239) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (63249) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 126443.[0m
+D (63239) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(2) = ESP_OK[0m
+[0;32mI (63259) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+D (63279) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (63289) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (63289) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (63299) POLL transmit buffer: 03 00 02 00 02 [0m
+D (63299) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), send data successful: TID=0x10a, 12 (bytes), errno 0[0m
+D (63309) emac_esp32: receive len= 67[0m
+D (63319) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (63319) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (63319) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (63329) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (63329) POLL sent buffer: 03 00 02 00 02 [0m
+D (63349) MB_TCP_MASTER_PORT: Socket(#55)(192.168.34.181) get data, length=13, TID=0x10a, errno=119(Connection already in progress)[0m
+D (63359) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), frame received.[0m
+D (63359) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (63369) MB_TCP_MASTER_PORT: Slave #3, data processing left time 2948 [ms].[0m
+D (63369) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (63379) POLL receive buffer: 03 04 d7 0a 40 23 [0m
+D (63399) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (63399) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (63399) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (63409) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (63409) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (63419) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), data processing completed.[0m
+D (63429) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), processing time[us] = 115580.[0m
+D (63419) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(3) = ESP_OK[0m
+[0;32mI (63449) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+D (63459) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (63469) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (63469) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (63479) POLL transmit buffer: 04 00 04 00 02 [0m
+D (63489) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), send data successful: TID=0x10b, 12 (bytes), errno 0[0m
+D (63489) emac_esp32: receive len= 67[0m
+D (63499) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (63499) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (63499) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (63519) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (63519) POLL sent buffer: 04 00 04 00 02 [0m
+D (63529) MB_TCP_MASTER_PORT: Socket(#55)(192.168.34.181) get data, length=13, TID=0x10b, errno=119(Connection already in progress)[0m
+D (63539) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), frame received.[0m
+D (63539) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (63549) MB_TCP_MASTER_PORT: Slave #3, data processing left time 2948 [ms].[0m
+D (63559) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (63569) POLL receive buffer: 04 04 d7 0a 40 63 [0m
+D (63579) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (63579) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (63589) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (63589) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (63589) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (63609) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), data processing completed.[0m
+D (63619) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), processing time[us] = 115505.[0m
+D (63609) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(4) = ESP_OK[0m
+[0;32mI (63629) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+D (63639) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (63659) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (63659) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (63669) POLL transmit buffer: 03 00 04 00 02 [0m
+D (63669) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), send data successful: TID=0x05, 12 (bytes), errno 0[0m
+D (63679) emac_esp32: receive len= 67[0m
+D (63679) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (63689) emac_esp32: receive len= 60[0m
+D (63699) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (63699) MB_TCP_MASTER_PORT: Set select timeout, left time: 2985 ms.[0m
+D (63699) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (63709) POLL sent buffer: 03 00 04 00 02 [0m
+D (63709) MB_TCP_MASTER_PORT: Socket(#54)(192.168.34.181) get data, length=13, TID=0x05, errno=119(Connection already in progress)[0m
+D (63729) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), frame received.[0m
+D (63729) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (63739) MB_TCP_MASTER_PORT: Slave #5, data processing left time 2947 [ms].[0m
+D (63749) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (63759) POLL receive buffer: 03 04 eb 85 40 71 [0m
+D (63759) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (63759) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (63779) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (63779) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (63779) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (63799) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), data processing completed.[0m
+D (63799) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), processing time[us] = 116364.[0m
+D (63799) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(5) = ESP_OK[0m
+[0;32mI (63829) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+D (63829) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (63839) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (63849) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (63849) POLL transmit buffer: 03 00 08 00 64 [0m
+D (63859) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x222, 12 (bytes), errno 0[0m
+D (63859) emac_esp32: receive len= 263[0m
+D (63869) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (63879) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (63879) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (63879) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (63899) POLL sent buffer: 03 00 08 00 64 [0m
+D (63899) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=209, TID=0x222, errno=119(Connection already in progress)[0m
+D (63919) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (63919) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (63919) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2948 [ms].[0m
+D (63929) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (63949) POLL receive buffer: 03 c8 aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (63949) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (63959) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (63959) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (63969) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (63979) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (63989) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (63999) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (63999) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (64009) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (64019) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (64019) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (64029) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa [0m
+D (64039) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (64049) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (64049) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (64059) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (64059) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (64069) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (64069) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 204605.[0m
+D (64079) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(6) = ESP_OK[0m
+[0;32mI (64099) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+D (64109) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (64109) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (64119) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (64119) POLL transmit buffer: 01 00 00 00 08 [0m
+D (64129) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x223, 12 (bytes), errno 0[0m
+D (64129) emac_esp32: receive len= 64[0m
+D (64139) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (64149) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (64149) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (64159) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (64169) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=10, TID=0x223, errno=119(Connection already in progress)[0m
+D (64169) POLL sent buffer: 01 00 00 00 08 [0m
+D (64179) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (64179) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (64189) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2947 [ms].[0m
+D (64209) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (64219) POLL receive buffer: 01 01 55 [0m
+D (64219) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (64219) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (64229) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (64229) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (64229) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (64259) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (64259) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 116096.[0m
+D (64259) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(7) = ESP_OK[0m
+[0;32mI (64279) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0x55) read successful.[0m
+D (64279) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (64299) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (64299) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (64309) POLL transmit buffer: 01 00 08 00 08 [0m
+D (64309) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x224, 12 (bytes), errno 0[0m
+D (64319) emac_esp32: receive len= 64[0m
+D (64329) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (64339) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (64339) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (64339) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (64349) POLL sent buffer: 01 00 08 00 08 [0m
+D (64349) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=10, TID=0x224, errno=119(Connection already in progress)[0m
+D (64369) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (64369) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (64379) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2949 [ms].[0m
+D (64389) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (64399) POLL receive buffer: 01 01 aa [0m
+D (64399) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (64399) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (64419) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (64419) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (64419) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (64429) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (64439) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 114796.[0m
+D (64429) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(8) = ESP_OK[0m
+[0;32mI (64469) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xaa) read successful.[0m
+D (64969) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (64969) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (64979) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (64979) POLL transmit buffer: 04 00 00 00 02 [0m
+D (64979) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x225, 12 (bytes), errno 0[0m
+D (64989) emac_esp32: receive len= 67[0m
+D (64999) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (65009) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (65009) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (65009) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (65019) POLL sent buffer: 04 00 00 00 02 [0m
+D (65019) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x225, errno=119(Connection already in progress)[0m
+D (65049) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (65049) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (65049) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (65059) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2937 [ms].[0m
+D (65059) POLL receive buffer: 04 04 5c 29 3f 8f [0m
+D (65069) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (65079) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (65089) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (65099) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (65099) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (65109) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (65109) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 114698.[0m
+D (65109) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(0) = ESP_OK[0m
+[0;32mI (65139) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+D (65149) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (65149) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (65159) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (65159) POLL transmit buffer: 03 00 00 00 02 [0m
+D (65179) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x226, 12 (bytes), errno 0[0m
+D (65179) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (65179) emac_esp32: receive len= 67[0m
+D (65189) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (65189) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (65199) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (65199) POLL sent buffer: 03 00 00 00 02 [0m
+D (65219) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x226, errno=119(Connection already in progress)[0m
+D (65229) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (65229) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (65229) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2946 [ms].[0m
+D (65239) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (65259) POLL receive buffer: 03 04 14 7a 40 fe [0m
+D (65259) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (65269) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (65269) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (65279) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (65279) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (65289) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (65309) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 128422.[0m
+D (65299) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(1) = ESP_OK[0m
+[0;32mI (65319) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 7.940000 (0x40fe147a) read successful.[0m
+D (65329) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (65339) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (65349) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (65349) POLL transmit buffer: 04 00 02 00 02 [0m
+D (65359) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x227, 12 (bytes), errno 0[0m
+D (65359) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (65369) emac_esp32: receive len= 67[0m
+D (65379) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (65379) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (65389) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (65389) POLL sent buffer: 04 00 02 00 02 [0m
+D (65399) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=13, TID=0x227, errno=119(Connection already in progress)[0m
+D (65419) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (65419) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (65419) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2946 [ms].[0m
+D (65429) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (65439) POLL receive buffer: 04 04 c2 8f 40 15 [0m
+D (65439) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (65449) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (65459) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (65469) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (65469) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (65479) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (65489) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 127959.[0m
+D (65479) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(2) = ESP_OK[0m
+[0;32mI (65509) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+D (65519) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (65519) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (65529) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (65529) POLL transmit buffer: 03 00 02 00 02 [0m
+D (65549) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), send data successful: TID=0x10c, 12 (bytes), errno 0[0m
+D (65549) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (65549) emac_esp32: receive len= 67[0m
+D (65559) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (65559) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (65569) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (65569) POLL sent buffer: 03 00 02 00 02 [0m
+D (65589) MB_TCP_MASTER_PORT: Socket(#55)(192.168.34.181) get data, length=13, TID=0x10c, errno=119(Connection already in progress)[0m
+D (65599) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), frame received.[0m
+D (65599) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (65599) MB_TCP_MASTER_PORT: Slave #3, data processing left time 2946 [ms].[0m
+D (65609) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (65629) POLL receive buffer: 03 04 d7 0a 40 23 [0m
+D (65629) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (65639) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (65639) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (65649) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (65649) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (65659) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), data processing completed.[0m
+D (65679) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), processing time[us] = 127898.[0m
+D (65669) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(3) = ESP_OK[0m
+D (65679) emac_esp32: receive len= 60[0m
+[0;32mI (65689) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+D (65699) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (65719) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (65719) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (65729) POLL transmit buffer: 04 00 04 00 02 [0m
+D (65729) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), send data successful: TID=0x10d, 12 (bytes), errno 0[0m
+D (65739) emac_esp32: receive len= 67[0m
+D (65739) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (65759) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (65759) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (65759) MB_TCP_MASTER_PORT: Socket(#55)(192.168.34.181) get data, length=13, TID=0x10d, errno=119(Connection already in progress)[0m
+D (65759) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (65769) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), frame received.[0m
+D (65779) POLL sent buffer: 04 00 04 00 02 [0m
+D (65789) MB_TCP_MASTER_PORT: Slave #3, data processing left time 2958 [ms].[0m
+D (65799) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (65809) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (65809) POLL receive buffer: 04 04 d7 0a 40 63 [0m
+D (65819) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (65819) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (65839) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (65839) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (65839) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (65849) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), data processing completed.[0m
+D (65859) MB_TCP_MASTER_PORT: Slave #3, Socket(#55)(192.168.34.181), processing time[us] = 116606.[0m
+D (65849) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(4) = ESP_OK[0m
+[0;32mI (65879) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+D (65889) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (65899) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (65899) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (65909) POLL transmit buffer: 03 00 04 00 02 [0m
+D (65919) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), send data successful: TID=0x06, 12 (bytes), errno 0[0m
+D (65919) emac_esp32: receive len= 67[0m
+D (65929) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (65929) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (65929) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (65939) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (65939) POLL sent buffer: 03 00 04 00 02 [0m
+D (65959) MB_TCP_MASTER_PORT: Socket(#54)(192.168.34.181) get data, length=13, TID=0x06, errno=119(Connection already in progress)[0m
+D (65969) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), frame received.[0m
+D (65969) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (65979) MB_TCP_MASTER_PORT: Slave #5, data processing left time 2948 [ms].[0m
+D (65979) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (65999) POLL receive buffer: 03 04 eb 85 40 71 [0m
+D (66009) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (66009) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (66019) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (66019) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (66019) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (66029) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), data processing completed.[0m
+D (66049) MB_TCP_MASTER_PORT: Slave #5, Socket(#54)(192.168.34.181), processing time[us] = 116085.[0m
+D (66029) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(5) = ESP_OK[0m
+[0;32mI (66059) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+D (66069) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (66079) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (66089) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (66099) POLL transmit buffer: 03 00 08 00 64 [0m
+D (66099) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x228, 12 (bytes), errno 0[0m
+D (66099) emac_esp32: receive len= 263[0m
+D (66109) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (66119) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (66119) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (66129) MB_TCP_MASTER_PORT: Set select timeout, left time: 2986 ms.[0m
+D (66129) POLL sent buffer: 03 00 08 00 64 [0m
+D (66139) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=209, TID=0x228, errno=119(Connection already in progress)[0m
+D (66149) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (66149) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (66169) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2948 [ms].[0m
+D (66169) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (66179) POLL receive buffer: 03 c8 aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (66189) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (66189) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (66209) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (66219) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (66219) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (66229) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (66229) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (66239) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (66249) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (66259) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (66269) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa [0m
+D (66269) POLL receive buffer: aa aa aa aa aa aa aa aa aa aa [0m
+D (66279) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (66279) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (66289) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (66289) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (66299) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (66309) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (66319) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 206090.[0m
+D (66309) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(6) = ESP_OK[0m
+[0;32mI (66329) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+D (66349) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (66349) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (66359) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (66359) POLL transmit buffer: 01 00 00 00 08 [0m
+D (66369) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x229, 12 (bytes), errno 0[0m
+D (66379) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (66379) emac_esp32: receive len= 64[0m
+D (66389) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (66389) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (66399) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (66399) POLL sent buffer: 01 00 00 00 08 [0m
+D (66419) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=10, TID=0x229, errno=119(Connection already in progress)[0m
+D (66429) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (66429) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (66439) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2936 [ms].[0m
+D (66439) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (66449) POLL receive buffer: 01 01 55 [0m
+D (66469) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (66469) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (66469) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (66479) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (66479) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (66489) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (66499) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 127350.[0m
+D (66489) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(7) = ESP_OK[0m
+[0;32mI (66519) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0x55) read successful.[0m
+D (66529) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (66529) MB_PORT_COMMON: xMBMasterRunResTake:Take resource (80) (300 ticks).[0m
+D (66539) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_TRANSMIT[0m
+D (66539) POLL transmit buffer: 01 00 08 00 08 [0m
+D (66559) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), send data successful: TID=0x22a, 12 (bytes), errno 0[0m
+D (66559) MB_PORT_COMMON: vMBMasterPortTimersRespondTimeoutEnable Respond enable timeout.[0m
+D (66559) emac_esp32: receive len= 64[0m
+D (66569) MB_TCP_MASTER_PORT: FSM Synchronized with sent event.[0m
+D (66569) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_SENT[0m
+D (66579) MB_TCP_MASTER_PORT: Set select timeout, left time: 2974 ms.[0m
+D (66589) POLL sent buffer: 01 00 08 00 08 [0m
+D (66599) MB_TCP_MASTER_PORT: Socket(#56)(192.168.34.181) get data, length=10, TID=0x22a, errno=119(Connection already in progress)[0m
+D (66609) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), frame received.[0m
+D (66609) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_FRAME_RECEIVED[0m
+D (66619) MB_TCP_MASTER_PORT: Slave #0, data processing left time 2936 [ms].[0m
+D (66619) MB_PORT_COMMON: eMBMasterPoll: Packet data received successfully (0).[0m
+D (66639) POLL receive buffer: 01 01 ff [0m
+D (66639) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_EXECUTE[0m
+D (66649) MB_PORT_COMMON: eMBMasterPoll: set event EV_ERROR_OK[0m
+D (66649) MB_PORT_COMMON: eMBMasterPoll:EV_MASTER_ERROR_PROCESS[0m
+D (66659) MB_PORT_COMMON: vMBMasterCBRequestSuccess: Callback request success.[0m
+D (66659) MB_PORT_COMMON: eMBMasterWaitRequestFinish: returned event = 0x40[0m
+D (66669) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), data processing completed.[0m
+D (66689) MB_TCP_MASTER_PORT: Slave #0, Socket(#56)(192.168.34.181), processing time[us] = 127388.[0m
+D (66679) MB_CONTROLLER_MASTER: mbc_tcp_master_get_parameter: Good response for get cid(8) = ESP_OK[0m
+D (66699) emac_esp32: receive len= 72[0m
+[0;32mI (66699) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = ON (0xff) read successful.[0m
+[0;32mI (67209) MASTER_TEST: Alarm triggered by cid #8.[0m
+[0;32mI (67209) MASTER_TEST: Destroy master...[0m
+D (67379) emac_esp32: receive len= 60[0m
+D (67379) emac_esp32: receive len= 60[0m
+D (67389) emac_esp32: receive len= 60[0m
+D (67689) emac_esp32: receive len= 60[0m

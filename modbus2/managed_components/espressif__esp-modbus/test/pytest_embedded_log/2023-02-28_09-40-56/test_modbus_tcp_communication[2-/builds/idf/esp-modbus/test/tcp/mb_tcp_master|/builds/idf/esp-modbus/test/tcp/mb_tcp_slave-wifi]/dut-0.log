@@ -1,0 +1,216 @@
+Serial port /dev/ttyUSB3
+Connecting....
+Connecting....
+Detecting chip type... Unsupported detection protocol, switching and trying again...
+Connecting....
+Detecting chip type... ESP32
+Connecting....
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 921600
+Changed.
+Auto-detected Flash size: 4MB
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x000bdfff...
+Warning: Image file at 0x1000 is protected with a hash checksum, so not changing the flash size setting. Use the --flash_size=keep option instead of --flash_size=4MB in order to remove this warning, or use the --dont-append-digest option for the elf2image command in order to generate an image file without a hash checksum
+Compressed 25728 bytes to 15870...
+Writing at 0x00001000... (100 %)Wrote 25728 bytes (15870 compressed) at 0x00001000 in 0.7 seconds (effective 299.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 308.1 kbit/s)...
+Hash of data verified.
+Compressed 712224 bytes to 456789...
+Writing at 0x00010000... (3 %)Writing at 0x0001b1ca... (7 %)Writing at 0x0002622b... (10 %)Writing at 0x0002ee32... (14 %)Writing at 0x00034b48... (17 %)Writing at 0x0003a3f6... (21 %)Writing at 0x000401ef... (25 %)Writing at 0x000458d1... (28 %)Writing at 0x0004b163... (32 %)Writing at 0x00050853... (35 %)Writing at 0x00055ee0... (39 %)Writing at 0x0005babd... (42 %)Writing at 0x0006178e... (46 %)Writing at 0x00066dbe... (50 %)Writing at 0x0006c0ba... (53 %)Writing at 0x000714c6... (57 %)Writing at 0x00076c86... (60 %)Writing at 0x0007c378... (64 %)Writing at 0x00081f65... (67 %)Writing at 0x00087a8f... (71 %)Writing at 0x0008d187... (75 %)Writing at 0x0009316a... (78 %)Writing at 0x00099f17... (82 %)Writing at 0x000a2001... (85 %)Writing at 0x000a8b7b... (89 %)Writing at 0x000ae442... (92 %)Writing at 0x000b3ba8... (96 %)Writing at 0x000b8d64... (100 %)Wrote 712224 bytes (456789 compressed) at 0x00010000 in 6.8 seconds (effective 834.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Changing baud rate to 115200
+Changed.
+Hard resetting via RTS pin...
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7256
+load:0x40078000,len:14220
+ho 0 tail 12 room 4
+load:0x40080400,len:4168
+entry 0x400806c0
+[0;32mI (29) boot: ESP-IDF v4.2.4-184-gab0ae8733f 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 08:34:15[0m
+[0;32mI (29) boot: chip revision: 3[0m
+[0;32mI (33) boot_comm: chip revision: 3, min. bootloader chip revision: 0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) boot_comm: chip revision: 3, min. application chip revision: 0[0m
+[0;32mI (104) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x19880 (104576) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=0x000298a8 vaddr=0x3ffb0000 size=0x03114 ( 12564) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=0x0002c9c4 vaddr=0x40080000 size=0x03654 ( 13908) load[0m
+[0;32mI (166) esp_image: segment 3: paddr=0x00030020 vaddr=0x400d0020 size=0x7bc90 (507024) map[0m
+[0;32mI (362) esp_image: segment 4: paddr=0x000abcb8 vaddr=0x40083654 size=0x12140 ( 74048) load[0m
+[0;32mI (406) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (406) cpu_start: Pro cpu up.[0m
+[0;32mI (410) cpu_start: Application information:[0m
+[0;32mI (415) cpu_start: Project name:     modbus_tcp_master[0m
+[0;32mI (421) cpu_start: App version:      v1.0.8-10-g8e37718[0m
+[0;32mI (427) cpu_start: Compile time:     Feb 28 2023 08:34:08[0m
+[0;32mI (433) cpu_start: ELF file SHA256:  9657cc6a7c6039be...[0m
+[0;32mI (439) cpu_start: ESP-IDF:          v4.2.4-184-gab0ae8733f[0m
+[0;32mI (445) cpu_start: Starting app cpu, entry point is 0x40081908[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (455) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (462) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (468) heap_init: At 3FFB7E18 len 000281E8 (160 KiB): DRAM[0m
+[0;32mI (474) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (481) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (487) heap_init: At 40095794 len 0000A86C (42 KiB): IRAM[0m
+[0;32mI (493) cpu_start: Pro cpu start user code[0m
+[0;32mI (512) spi_flash: detected chip: generic[0m
+[0;32mI (512) spi_flash: flash io: dio[0m
+[0;33mW (513) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (523) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+I (617) wifi:wifi driver task: 3ffc034c, prio:23, stack:6656, core=0
+[0;32mI (617) system_api: Base MAC address is not set[0m
+[0;32mI (617) system_api: read default base MAC address from EFUSE[0m
+I (637) wifi:wifi firmware version: fe22bd4
+I (637) wifi:wifi certification version: v7.0
+I (637) wifi:config NVS flash: enabled
+I (637) wifi:config nano formating: disabled
+I (647) wifi:Init data frame dynamic rx buffer num: 32
+I (647) wifi:Init management frame dynamic rx buffer num: 32
+I (657) wifi:Init management short buffer num: 32
+I (657) wifi:Init dynamic tx buffer num: 32
+I (667) wifi:Init static rx buffer size: 1600
+I (667) wifi:Init static rx buffer num: 10
+I (667) wifi:Init dynamic rx buffer num: 32
+[0;32mI (677) wifi_init: rx ba win: 6[0m
+[0;32mI (677) wifi_init: tcpip mbox: 32[0m
+[0;32mI (687) wifi_init: udp mbox: 6[0m
+[0;32mI (687) wifi_init: tcp mbox: 6[0m
+[0;32mI (687) wifi_init: tcp tx win: 5744[0m
+[0;32mI (697) wifi_init: tcp rx win: 5744[0m
+[0;32mI (697) wifi_init: tcp mss: 1440[0m
+[0;32mI (707) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (707) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (717) example_connect: Connecting to EspressifSystems...[0m
+[0;32mI (717) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (827) wifi:mode : sta (10:97:bd:d5:4f:b0)
+I (827) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (2387) wifi:state: init -> auth (b0)
+[0;32mI (2387) example_connect: Waiting for IP(s)[0m
+I (2397) wifi:state: auth -> assoc (0)
+I (2407) wifi:state: assoc -> run (10)
+I (2447) wifi:connected with EspressifSystems, aid = 2, channel 1, BW20, bssid = 68:d7:9a:87:52:28
+I (2447) wifi:security: WPA2-PSK, phy: bgn, rssi: -77
+I (2447) wifi:pm start, type: 1
+
+I (2467) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4597) esp_netif_handlers: example_connect: sta ip: 192.168.33.234, mask: 255.255.254.0, gw: 192.168.32.3[0m
+[0;32mI (4597) example_connect: Got IPv4 event: Interface "example_connect: sta" address: 192.168.33.234[0m
+[0;32mI (4607) example_connect: Connected to example_connect: sta[0m
+[0;32mI (4617) example_connect: - IPv4 address: 192.168.33.234[0m
+I (4617) wifi:Set ps type: 0
+
+[0;32mI (4617) uart: ESP_INTR_FLAG_IRAM flag not set while CONFIG_UART_ISR_IN_IRAM is enabled, flag updated[0m
+Waiting IP0 from stdin:
+
+[0;32mI (20427) MASTER_TEST: IP(0) = [192.168.33.224] set from stdin.[0m
+Waiting IP1 from stdin:
+
+[0;32mI (20427) MASTER_TEST: IP(1) = [192.168.33.224] set from stdin.[0m
+Waiting IP2 from stdin:
+
+[0;32mI (20447) MASTER_TEST: IP(2) = [192.168.33.224] set from stdin.[0m
+[0;32mI (20447) MASTER_TEST: IP(3) is not set in the table.[0m
+[0;32mI (20457) MASTER_TEST: Configured 3 IP addresse(s).[0m
+[0;32mI (20457) MASTER_TEST: Modbus master stack initialized...[0m
+[0;32mI (20467) MB_TCP_MASTER_PORT: TCP master stack initialized.[0m
+[0;32mI (20477) MB_TCP_MASTER_PORT: Host[IP]: "192.168.33.224"[192.168.33.224][0m
+[0;32mI (20477) MB_TCP_MASTER_PORT: Add slave IP: 192.168.33.224[0m
+[0;32mI (20477) MB_TCP_MASTER_PORT: Host[IP]: "192.168.33.224"[192.168.33.224][0m
+[0;32mI (20487) MB_TCP_MASTER_PORT: Add slave IP: 192.168.33.224[0m
+[0;32mI (20487) MB_TCP_MASTER_PORT: Host[IP]: "192.168.33.224"[192.168.33.224][0m
+[0;32mI (20507) MB_TCP_MASTER_PORT: Add slave IP: 192.168.33.224[0m
+[0;32mI (20517) MB_TCP_MASTER_PORT: Connecting to slaves...[0m
+---...---...[0;32mI (20707) MB_TCP_MASTER_PORT: Connected 3 slaves, start polling...[0m
+[0;32mI (20757) MASTER_TEST: Start modbus test...[0m
+[0;32mI (20767) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (20807) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 1.340000 (0x3fab851f) read successful.[0m
+[0;32mI (20827) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (20837) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (20857) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (20867) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (20887) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0x00000000) read successful.[0m
+[0;32mI (20917) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa), write successful.[0m
+[0;32mI (20927) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0x55) read successful.[0m
+[0;32mI (20947) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xaa) read successful.[0m
+[0;32mI (21457) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (21477) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 2.440000 (0x401c28f6) read successful.[0m
+[0;32mI (21487) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (21507) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (21527) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (21547) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (21557) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (21577) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0x55) read successful.[0m
+[0;32mI (21587) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xaa) read successful.[0m
+[0;32mI (22097) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (22117) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 3.540000 (0x40628f5c) read successful.[0m
+[0;32mI (22137) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (22157) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (22167) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (22187) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (22217) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (22237) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0x55) read successful.[0m
+[0;32mI (22257) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xaa) read successful.[0m
+[0;32mI (22767) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (22787) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 4.640000 (0x40947ae1) read successful.[0m
+[0;32mI (22807) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (22817) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (22847) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (22857) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (22877) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (22897) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0x55) read successful.[0m
+[0;32mI (22917) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xaa) read successful.[0m
+[0;32mI (23427) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (23447) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 5.740000 (0x40b7ae14) read successful.[0m
+[0;32mI (23467) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (23487) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (23497) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (23517) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (23537) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (23547) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0x55) read successful.[0m
+[0;32mI (23567) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xaa) read successful.[0m
+[0;32mI (24077) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (24097) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 6.840000 (0x40dae147) read successful.[0m
+[0;32mI (24117) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (24137) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (24147) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (24167) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (24187) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (24207) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0x55) read successful.[0m
+[0;32mI (24217) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = OFF (0xaa) read successful.[0m
+[0;32mI (24737) MASTER_TEST: Characteristic #0 Data_channel_0 (Volts) value = 1.120000 (0x3f8f5c29) read successful.[0m
+[0;32mI (24757) MASTER_TEST: Characteristic #1 Humidity_1 (%rH) value = 7.940000 (0x40fe147a) read successful.[0m
+[0;32mI (24777) MASTER_TEST: Characteristic #2 Temperature_1 (C) value = 2.340000 (0x4015c28f) read successful.[0m
+[0;32mI (24797) MASTER_TEST: Characteristic #3 Humidity_2 (%rH) value = 2.560000 (0x4023d70a) read successful.[0m
+[0;32mI (24807) MASTER_TEST: Characteristic #4 Temperature_2 (C) value = 3.560000 (0x4063d70a) read successful.[0m
+[0;32mI (24827) MASTER_TEST: Characteristic #5 Humidity_3 (%rH) value = 3.780000 (0x4071eb85) read successful.[0m
+[0;32mI (24847) MASTER_TEST: Characteristic #6 Test_regs (__) value = (0xaaaaaaaa) read successful.[0m
+[0;32mI (24857) MASTER_TEST: Characteristic #7 RelayP1 (on/off) value = OFF (0x55) read successful.[0m
+[0;32mI (24877) MASTER_TEST: Characteristic #8 RelayP2 (on/off) value = ON (0xff) read successful.[0m
+[0;32mI (25377) MASTER_TEST: Alarm triggered by cid #8.[0m
+[0;32mI (25377) MASTER_TEST: Destroy master...[0m

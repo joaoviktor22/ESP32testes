@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/joaoviktor/BlueToothTest/build/CMakeFiles/bootloader
+/Users/joaoviktor/BlueToothTest/build/CMakeFiles/bootloader.rule
+/Users/joaoviktor/BlueToothTest/build/CMakeFiles/bootloader-complete.rule
+/Users/joaoviktor/BlueToothTest/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/joaoviktor/BlueToothTest/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/joaoviktor/BlueToothTest/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/joaoviktor/BlueToothTest/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/joaoviktor/BlueToothTest/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/joaoviktor/BlueToothTest/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/joaoviktor/BlueToothTest/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
